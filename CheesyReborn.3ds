@@ -1,0 +1,96 @@
+{
+    "shadows": true,
+    "antiAliasing": true,
+    "ssao": false,
+    "ssaoDisplay": false,
+    "ssaoClamp": "0.58",
+    "ssaoLumInfluence": 0.7,
+    "rgbCurve": {
+        "red": [
+            [
+                0,
+                0
+            ],
+            [
+                0.19281005859375,
+                0.17803955078125
+            ],
+            [
+                0.70843505859375,
+                0.69781494140625
+            ],
+            [
+                1,
+                1
+            ]
+        ],
+        "green": [
+            [
+                0,
+                0
+            ],
+            [
+                0.23968505859375,
+                0.23297119140625
+            ],
+            [
+                0.76702880859375,
+                0.76812744140625
+            ],
+            [
+                1,
+                1
+            ]
+        ],
+        "blue": [
+            [
+                0,
+                0
+            ],
+            [
+                0.27484130859375,
+                0.26422119140625
+            ],
+            [
+                0.76312255859375,
+                0.72906494140625
+            ],
+            [
+                1,
+                1
+            ]
+        ]
+    },
+    "levelsInBlack": "0.1",
+    "levelsInGamma": 0.9199999999999999,
+    "levelsInWhite": "0.76",
+    "levelsOutBlack": 0,
+    "levelsOutWhite": 1,
+    "skyBox": "indoor",
+    "dynamicEnvMap": true,
+    "sun": "",
+    "bloom": false,
+    "bloomStrength": "0.78",
+    "bloomRadius": "0.8",
+    "bloomThreshold": "0.73",
+    "fog": true,
+    "fogDensity": "0.3",
+    "fogColor": "#777674",
+    "pbrMaterial": true,
+    "verticalFOV": "59.9",
+    "nearClippingDistance": "0.01",
+    "farClippingDistance": "69.9",
+    "showCameraHelper": false,
+    "shadowSettings": [
+        {
+            "lightName": "sun",
+            "mapSize": 4096,
+            "bias": 0.00001,
+            "cameraBottom": -1,
+            "cameraLeft": -1,
+            "cameraRight": 1,
+            "cameraTop": 1
+        }
+    ],
+    "defaultCameraMode":"lookatrobot"
+}

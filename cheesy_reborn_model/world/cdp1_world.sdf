@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+    <world name="default">
+        <physics type="opensim">
+          <max_step_size>0.01</max_step_size>
+          <opensim>
+            <integrator>rk_merson</integrator>
+    <!--         <accuracy>1.e-2</accuracy> -->
+          </opensim>
+        </physics>
+
+        <light name='sun' type='directional'>
+            <cast_shadows>1</cast_shadows>
+            <pose>-0.195 0 0.32 0 -0 0</pose>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.2 0.2 0.2 1</specular>
+            <attenuation>
+                <range>1000</range>
+                <constant>0.9</constant>
+                <linear>0.01</linear>
+                <quadratic>0.001</quadratic>
+            </attenuation>
+            <direction>0.3698 0.4 -0.5</direction>
+        </light>
+<!--
+        <model name="EyeCandy">
+            <static>true</static>
+            <link name="PlatformAndMouse">
+                <inertial>
+                    <pose>3.79711e-02 -1.42780e-01 -1.47381e-01 0 0 0</pose>
+                    <mass>7.09730e+00</mass>
+                    <inertia>
+                        <ixx>9.50084e-02</ixx>
+                        <iyy>6.73169e-02</iyy>
+                        <izz>5.90668e-02</izz>
+                        <ixy>2.50639e-03</ixy>
+                        <ixz>3.95207e-03</ixz>
+                        <iyz>-1.06488e-02</iyz>
+                    </inertia>
+                </inertial>
+                <visual name="Base">
+                    <pose>0 0 0 0 0 0</pose>
+                    <geometry>
+                        <mesh>
+                            <scale>0.01 0.01 0.01</scale>
+                            <uri>model://cdp1_world/meshes/Base_simplified_wo_sled_parts.dae</uri>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <visual name="Mouse">
+                    <pose>0.0044959 -0.038818 0.0225099 1.5707963 0.87266462 1.5707963</pose>
+                    <geometry>
+                        <mesh>
+                            <scale>0.00161 0.00161  0.00161</scale>
+                            <uri>model://cdp1_world/meshes/MouseBody_simplified.dae</uri>
+                        </mesh>
+                    </geometry>
+                </visual>
+            </link>
+        </model>
+
+        <model name="ground">
+            <static>true</static>
+            <link name="Ground">
+                <visual name="Base">
+                    <pose>-0.0 0.0 -0.05 0 0 0</pose>
+                    <geometry>
+                        <mesh>
+                            <scale>0.07 0.07 0.07</scale>
+                            <uri>model://large_concrete_ground/meshes/largeconcreteground.dae</uri>
+                        </mesh>
+                    </geometry>
+                </visual>
+            </link>
+        </model>
+-->
+
+        <scene>
+            <ambient>0.4 0.4 0.4 1</ambient>
+            <background>0.7 0.7 0.7 1</background>
+            <shadows>1</shadows>
+        </scene>
+    </world>
+</sdf>

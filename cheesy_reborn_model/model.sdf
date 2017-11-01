@@ -1,0 +1,179 @@
+<?xml version="1.0" ?>
+<!-- Note: Typical bone density: 1900 kg/m3 -->
+<!--Density of Al: 2700 kg/m3-->
+<!--Reference for strength of some mouse hindlimb muscle:
+    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4549925/
+    Maximal force generation was about 40g, i.e. ca. 0.4N.
+    -->
+
+<sdf version="1.6">
+  <model name='mouse_and_sled'>
+    <link name="humerus">
+      <pose>0.011430741548538208 -0.07998862266540527 0.03054861545562744 1.501339316368103 0.3068421483039856 1.2602612972259521</pose>
+<inertial>
+  <pose>4.13950e-03 -1.77810e-04 -1.08265e-04 0 0 0</pose>
+  <mass>5.21922e-05</mass>
+  <inertia>
+    <ixx>3.08473e-11</ixx>
+    <iyy>7.57217e-10</iyy>
+    <izz>7.65936e-10</izz>
+    <ixy>-2.65578e-11</ixy>
+    <ixz>1.69743e-11</ixz>
+    <iyz>2.61988e-12</iyz>
+  </inertia>
+</inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>0.00161 0.00161  0.00161</scale>
+            <uri>model://cdp1_mouse_w_sled/meshes/UpperLeg.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Grey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="radius">
+      <pose>0.014731976985931396 -0.0697014856338501 0.027125487327575684 -0.1073882207274437 1.1397238969802856 -1.667025089263916</pose>
+<inertial>
+  <pose>3.60719e-03 -3.44408e-06 -5.31513e-04 0 0 0</pose>
+  <mass>2.71493e-05</mass>
+  <inertia>
+    <ixx>2.21656e-11</ixx>
+    <iyy>5.68533e-10</iyy>
+    <izz>5.53422e-10</izz>
+    <ixy>-1.29702e-11</ixy>
+    <ixz>-8.09620e-11</ixz>
+    <iyz>-1.75862e-12</iyz>
+  </inertia>
+</inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>0.00161 0.00161  0.00161</scale>
+            <uri>model://cdp1_mouse_w_sled/meshes/LowerLeg.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Grey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="foot">
+      <pose>0.01419455647468567 -0.07526905536651611 0.01496369481086731 1.4968167543411255 0.05008336156606674 -1.6218668222427368</pose>
+<inertial>
+  <pose>3.13744e-03 -4.07710e-04 2.34798e-05 0 0 0</pose>
+  <mass>9.10633e-06</mass>
+  <inertia>
+    <ixx>3.16374e-12</ixx>
+    <iyy>3.98443e-11</iyy>
+    <izz>3.72875e-11</izz>
+    <ixy>-1.54496e-12</ixy>
+    <ixz>-1.75061e-13</ixz>
+    <iyz>-1.33752e-14</iyz>
+  </inertia>
+</inertial>
+
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>0.00161 0.00161  0.00161</scale>
+            <uri>model://cdp1_mouse_w_sled/meshes/Foot_simplified.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Grey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <joint name="world_humerus" type="ball">
+      <pose>0.0 -0.0476837158203125e-07 0.0 -1.3425979614257812 -1.2740046977996826 0.08899474143981934</pose>
+      <parent>world</parent>
+      <child>humerus</child>
+<!--      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1.e-7</damping>
+        </dynamics>
+        <limit>
+            <lower>-2.44</lower>
+            <upper>0.</upper>
+            <stiffness>1</stiffness>
+            <dissipation>1.e-3</dissipation>
+        </limit>
+      </axis>-->
+    </joint>
+
+    <joint name="humerus_radius" type="revolute">
+      <pose> 0.02384185791015625e-07 -0.095367431640625e-07 0.0 -1.14228093624115 -0.01989903301000595 1.6109617948532104</pose>
+      <parent>humerus</parent>
+      <child>radius</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1.e-6</damping>
+        </dynamics>
+        <limit>
+            <lower>-1.046</lower>
+            <upper>1.046</upper>
+            <stiffness>100</stiffness>
+            <dissipation>1.e-2</dissipation>
+        </limit>
+      </axis>
+    </joint>
+
+    <joint name="radius_foot" type="revolute">
+      <pose>0.03814697265625e-06 0.0 0.0667572021484375e-06 0.5690118074417114 1.4830573797225952 2.1917858123779297</pose>
+      <parent>radius</parent>
+      <child>foot</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1.e-6</damping>
+        </dynamics>
+        <limit>
+            <lower>-0.8722</lower>
+            <upper>0.6</upper>
+            <stiffness>100</stiffness>
+            <dissipation>1.e-2</dissipation>
+        </limit>
+      </axis>
+    </joint>
+
+    <include>
+      <uri>model://cdp1_msled</uri>
+    </include>
+
+    <joint name="slider_foot" type="prismatic">
+      <parent>foot</parent>
+      <child>cdp1_msled::sled</child>
+      <pose>0 0 1.e-3 0 0 0</pose>
+      <axis>
+      <xyz>1 0 0</xyz>
+<!--        <limit>
+          <lower>-0.01</lower>
+          <upper>0.01</upper>
+          <stiffness>100.</stiffness>
+          <dissipation>0.01</dissipation>
+        </limit>-->
+      </axis>
+    </joint>
+
+    <muscles>model://cdp1_mouse_w_sled/muscles.osim</muscles>
+
+    <plugin name="muscle_interface_plugin" filename="libgazebo_ros_muscle_interface.so"></plugin>
+  </model>
+</sdf>

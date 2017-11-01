@@ -1,0 +1,4 @@
+﻿#!/usr/bin/env python
+"""
+A state-machine that deletes, spawns and moves objects in the 3D scenes.
+"""

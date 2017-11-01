@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns="http://schemas.humanbrainproject.eu/SP10/2014/ExDConfig"
+     xsi:schemaLocation="http://schemas.humanbrainproject.eu/SP10/2014/ExDConfig ../ExDConfFile.xsd">
+    <name>Cheesy Reborn</name>
+    <thumbnail>CheesyReborn.png</thumbnail>
+    <description>He is back!!!</description>
+    <timeout>1000000000</timeout>
+    <configuration type="3d-settings" src="CheesyReborn.3ds"/>
+    <configuration type="brainvisualizer" src="CheesyRebornNeuronCoords.json"/>
+    <maturity>development</maturity>
+    <environmentModel src="cheesy_reborn_model/world/cdp1_world.sdf">
+        <robotPose x="0.0" y="0.0" z="0.0" ux="0.0" uy="0.0" uz="0.0" theta="0.0"/>
+    </environmentModel>
+    <bibiConf src="CheesyReborn.bibi"/>
+    <experimentControl>
+        <stateMachine xsi:type="SMACHStateMachine"
+                      id="CheesyRebornControl_SMACH"
+                      src="CheesyRebornControl.exd"/>
+    </experimentControl>
+    <cameraPose>
+        <cameraPosition x="0.20881767737668355" y="-0.26" z="0.07452707557551946"/>
+        <cameraLookAt x="-0.527092211" y="0.839239426" z="-0.133607597"/>
+    </cameraPose>
+    <physicsEngine>opensim</physicsEngine>
+</ExD>

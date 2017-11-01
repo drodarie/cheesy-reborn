@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSimDocument Version="30000">
+<Model>
+<ForceSet>
+        <objects>
+          <Millard2012EquilibriumMuscle name="Foot1">
+              <GeometryPath>
+                      <PathPointSet>
+                              <objects>
+                                <PathPoint name="MuscleAttachFoot1a">
+                                    <location>0.004941561259329319 0.0001271646615350619 0.0006325360154733062</location>
+                                    <body>radius</body>
+                                </PathPoint>
+                                <PathPoint name="MuscleAttachFoot1b">
+                                    <location>0.0010596886277198792 5.046450678491965e-05 -2.7505437174113467e-05</location>
+                                    <body>foot</body>
+                                </PathPoint>
+                              </objects>
+                              <groups />
+                      </PathPointSet>
+              </GeometryPath>
+              <max_isometric_force>0.8</max_isometric_force>
+              <optimal_fiber_length>0.0088</optimal_fiber_length>
+              <default_fiber_length>0.0088</default_fiber_length>
+              <tendon_slack_length>0.0008</tendon_slack_length>
+              <!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
+              <pennation_angle_at_optimal>0</pennation_angle_at_optimal>
+              <!--percentage of active motor units that fatigue in unit time-->
+              <fatigue_factor>0.0</fatigue_factor>
+              <!--percentage of fatigued motor units that recover in unit time-->
+              <recovery_factor>0.2</recovery_factor>
+          </Millard2012EquilibriumMuscle>
+          <Millard2012EquilibriumMuscle name="Foot2">
+              <GeometryPath>
+                      <PathPointSet>
+                              <objects>
+<PathPoint name="MuscleAttachFoot2a">
+    <location>0.009521103464066982 0.0002889145689550787 -4.5030672481516376e-05</location>
+    <body>radius</body>
+</PathPoint>
+<PathPoint name="MuscleAttachFoot2b">
+    <location>0.013455137610435486 0.00045130166108720005 -0.00026000113575719297</location>
+    <body>radius</body>
+</PathPoint>
+<PathPoint name="MuscleAttachFoot2c">
+    <location>0.0002643617335706949 -0.0009133021230809391 -0.00016370142111554742</location>
+    <body>foot</body>
+</PathPoint>
+<PathPoint name="MuscleAttachFoot2d">
+    <location>0.001069687306880951 -0.0009886219631880522 -0.00021032891527283937</location>
+    <body>foot</body>
+</PathPoint>
+                              </objects>
+                              <groups />
+                      </PathPointSet>
+<!--                      <PathWrapSet>
+                        <objects>
+                          <PathWrap name="PathWrap2">
+                            <wrap_object>Wrap2</wrap_object>
+                            <method>midpoint</method>
+                          </PathWrap>
+                        </objects>
+                      </PathWrapSet>-->
+              </GeometryPath>
+              <max_isometric_force>0.8</max_isometric_force>
+<optimal_fiber_length>0.0056</optimal_fiber_length>
+<default_fiber_length>0.0056</default_fiber_length>
+<tendon_slack_length>0.0005</tendon_slack_length>
+              <!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
+              <pennation_angle_at_optimal>0</pennation_angle_at_optimal>
+              <!--percentage of active motor units that fatigue in unit time-->
+              <fatigue_factor>0.0</fatigue_factor>
+              <!--percentage of fatigued motor units that recover in unit time-->
+              <recovery_factor>0.2</recovery_factor>
+          </Millard2012EquilibriumMuscle>
+
+          <Millard2012EquilibriumMuscle name="Radius1">
+              <GeometryPath>
+                      <PathPointSet>
+                              <objects>
+<PathPoint name="MuscleAttachRadius1a">
+    <location>0.005176727660000324 -0.0018064073519781232 -4.783126860274933e-05</location>
+    <body>humerus</body>
+</PathPoint>
+<PathPoint name="MuscleAttachRadius1b">
+    <location>0.0020360914058983326 -0.00019856763537973166 0.00031698349630460143</location>
+    <body>radius</body>
+</PathPoint>
+                              </objects>
+                              <groups />
+                      </PathPointSet>
+              </GeometryPath>
+              <max_isometric_force>1</max_isometric_force>
+<optimal_fiber_length>0.0055</optimal_fiber_length>
+<default_fiber_length>0.0055</default_fiber_length>
+<tendon_slack_length>0.0005</tendon_slack_length>
+              <!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
+              <pennation_angle_at_optimal>0</pennation_angle_at_optimal>
+              <!--percentage of active motor units that fatigue in unit time-->
+              <fatigue_factor>0.0</fatigue_factor>
+              <!--percentage of fatigued motor units that recover in unit time-->
+              <recovery_factor>0.2</recovery_factor>
+          </Millard2012EquilibriumMuscle>
+          <Millard2012EquilibriumMuscle name="Radius2">
+              <GeometryPath>
+                      <PathPointSet>
+                              <objects>
+<PathPoint name="MuscleAttachRadius2a">
+    <location>0.006284732837229967 0.0013606055872514844 -0.0011461324756965041</location>
+    <body>humerus</body>
+</PathPoint>
+<PathPoint name="MuscleAttachRadius2b">
+    <location>-0.002230733633041382 -0.00020512385526672006 -0.0007586857536807656</location>
+    <body>radius</body>
+</PathPoint>
+                              </objects>
+                              <groups />
+                      </PathPointSet>
+              </GeometryPath>
+              <max_isometric_force>1</max_isometric_force>
+<optimal_fiber_length>0.006041</optimal_fiber_length>
+<default_fiber_length>0.006041</default_fiber_length>
+<tendon_slack_length>0.0006</tendon_slack_length>
+              <!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
+              <pennation_angle_at_optimal>0</pennation_angle_at_optimal>
+              <!--percentage of active motor units that fatigue in unit time-->
+              <fatigue_factor>0.0</fatigue_factor>
+              <!--percentage of fatigued motor units that recover in unit time-->
+              <recovery_factor>0.2</recovery_factor>
+          </Millard2012EquilibriumMuscle>
+
+          <Millard2012EquilibriumMuscle name="Humerus1">
+              <GeometryPath>
+                      <PathPointSet>
+                              <objects>
+<PathPoint name="MuscleAttachHumerus1a">
+    <location>0.008719013072550297 -0.07816339284181595 0.036927588284015656</location>
+    <body>world</body>
+</PathPoint>
+<PathPoint name="MuscleAttachHumerus1b">
+    <location>0.010565393604338169 -0.08011236786842346 0.03379900008440018</location>
+    <body>world</body>
+</PathPoint>
+<PathPoint name="MuscleAttachHumerus1c">
+    <location>0.0009210651624016464 -0.002134087961167097 0.00045298447366803885</location>
+    <body>humerus</body>
+</PathPoint>
+<PathPoint name="MuscleAttachHumerus1d">
+    <location>0.00433479156345129 -0.001905067008920014 0.00033836570219136775</location>
+    <body>humerus</body>
+</PathPoint>
+                              </objects>
+                              <groups />
+                      </PathPointSet>
+<!--                      <PathWrapSet>
+                        <objects>
+                          <PathWrap name="PathWrap1">
+                            <wrap_object>Wrap1</wrap_object>
+                            <method>midpoint</method>
+                          </PathWrap>
+                        </objects>
+                      </PathWrapSet>-->
+              </GeometryPath>
+              <max_isometric_force>1.4</max_isometric_force>
+<optimal_fiber_length>0.0115</optimal_fiber_length>
+<default_fiber_length>0.0115</default_fiber_length>
+<tendon_slack_length>0.001</tendon_slack_length>
+
+              <!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
+              <pennation_angle_at_optimal>0</pennation_angle_at_optimal>
+              <!--percentage of active motor units that fatigue in unit time-->
+              <fatigue_factor>0.0</fatigue_factor>
+              <!--percentage of fatigued motor units that recover in unit time-->
+              <recovery_factor>0.2</recovery_factor>
+          </Millard2012EquilibriumMuscle>
+          <Millard2012EquilibriumMuscle name="Humerus2">
+              <GeometryPath>
+                      <PathPointSet>
+                              <objects>
+<PathPoint name="MuscleAttachHumerus2a">
+    <location>0.009283185005187988 -0.07780437916517258 0.0355428010225296</location>
+    <body>world</body>
+</PathPoint>
+<PathPoint name="MuscleAttachHumerus2b">
+    <location>0.01112101599574089 -0.07784712314605713 0.030884109437465668</location>
+    <body>world</body>
+</PathPoint>
+<PathPoint name="MuscleAttachHumerus2c">
+    <location>0.0028157313354313374 0.00041827026871033013 -0.00015790214820299298</location>
+    <body>humerus</body>
+</PathPoint>
+                              </objects>
+                              <groups />
+                      </PathPointSet>
+              </GeometryPath>
+              <max_isometric_force>1.4</max_isometric_force>
+<optimal_fiber_length>0.0064</optimal_fiber_length>
+<default_fiber_length>0.0064</default_fiber_length>
+<tendon_slack_length>0.0006</tendon_slack_length>
+              <!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
+              <pennation_angle_at_optimal>0</pennation_angle_at_optimal>
+              <!--percentage of active motor units that fatigue in unit time-->
+              <fatigue_factor>0.0</fatigue_factor>
+              <!--percentage of fatigued motor units that recover in unit time-->
+              <recovery_factor>0.2</recovery_factor>
+          </Millard2012EquilibriumMuscle>
+        </objects>
+        <groups/>
+</ForceSet>
+<!--<BodySet name="">
+  <objects>
+    <Body name="world">
+      <WrapObjectSet name="">
+        <objects>
+<WrapCylinder name="Wrap1">
+    <xyz_body_rotation>-0.000000 1.570796 0.000000</xyz_body_rotation>
+    <translation>0.011437 -0.079960 0.030826</translation>
+    <active>true</active>
+    <radius>0.002058</radius>
+    <length>0.012192</length>
+</WrapCylinder>
+        </objects>
+        <groups/>
+      </WrapObjectSet>
+    </Body>
+    <Body name="radius">
+      <WrapObjectSet name="">
+        <objects>
+<WrapCylinder name="Wrap2">
+    <xyz_body_rotation>-1.548932 0.428416 0.049218</xyz_body_rotation>
+    <translation>0.013812 0.000551 0.000223</translation>
+    <active>true</active>
+    <radius>0.000514</radius>
+    <length>0.005600</length>
+</WrapCylinder>
+
+        </objects>
+        <groups/>
+      </WrapObjectSet>
+    </Body>
+  </objects>
+  <groups/>
+</BodySet>-->
+</Model>
+</OpenSimDocument>
