@@ -2,14 +2,9 @@
 <bibi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.humanbrainproject.eu/SP10/2014/BIBI" xsi:schemaLocation="http://schemas.humanbrainproject.eu/SP10/2014/BIBI ../bibi_configuration.xsd">
   <brainModel>
     <file>cheesy_reborn_model/simWholeBrainNRP.py</file>
-    <populations population="neurons" xsi:type="Range" from="0" to="34"/>
+    <populations population="neurons" xsi:type="Range" from="0" to="10"/>
   </brainModel>
   <bodyModel>cheesy_reborn_model/model.sdf</bodyModel>
-  <transferFunction xsi:type="Neuron2Monitor" name="all_neurons_spike_monitor">
-    <device name="all_neurons" type="SpikeRecorder">
-      <neurons xsi:type="Range" population="neurons" from="0" to="34"/>
-    </device>
-  </transferFunction>  
   <transferFunction xsi:type="PythonTransferFunction" src="robot2neuron_tf.py"/>
   <transferFunction xsi:type="PythonTransferFunction" src="neuron2robot_tf.py"/>
 </bibi>

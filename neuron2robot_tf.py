@@ -21,8 +21,10 @@ def transferfunction_Neuron2Robot( t,
     import traceback
     import time
     clientLogger.info("Writing spikes (t="+str(t)+"): ")
+    allSpikes = ""
     for i in range(len(neurons.times)):
-        clientLogger.info(str(i)+" SPIKES: "+str(neurons.times[i][0])+" "+str(neurons.times[i][1])+" ")
+        allSpikes += str(int(neurons.times[i][0]))+","+str(neurons.times[i][1])+" / "
+    clientLogger.info(allSpikes)
 
     #~ for sender, value in [(activateHumerus1, nnData['LEFT_PMA']),(activateFoot1, nnData['LEFT_TA']),(activateRadius1, nnData['LEFT_RF']),(activateHumerus2, nnData['LEFT_CF']),(activateFoot2, nnData['LEFT_LG']),(activateRadius2, nnData['LEFT_POP'])]:
         #~ sender.send_message(value)                             

@@ -31,8 +31,8 @@ def create_brain():
 
     N = (h5file["x"].value).shape[0]
 
-    #~ cells = sim.Population(N, sim.IF_cond_alpha, {})
-    cells = sim.Population(35, sim.IF_cond_alpha, {})
+    cells = sim.Population(N, sim.IF_cond_alpha, {})
+    #~ cells = sim.Population(35, sim.IF_cond_alpha, {})
     #~ cells = sim.Population(4, sim.IF_cond_alpha, {})
 
     #~ for i, gid_ in enumerate(range(1, N + 1)):
