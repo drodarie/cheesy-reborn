@@ -2,7 +2,6 @@
 <bibi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.humanbrainproject.eu/SP10/2014/BIBI" xsi:schemaLocation="http://schemas.humanbrainproject.eu/SP10/2014/BIBI ../bibi_configuration.xsd">
   <brainModel>
     <file>cheesy_reborn_model/simWholeBrainNRP.py</file>
-    <populations population="neurons" xsi:type="Range" from="0" to="10"/>
   </brainModel>
   <bodyModel>cheesy_reborn_model/model.sdf</bodyModel>
   <transferFunction xsi:type="PythonTransferFunction" src="robot2neuron_tf.py"/>
