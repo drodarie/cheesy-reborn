@@ -1,179 +1,4833 @@
 <?xml version="1.0" ?>
-<!-- Note: Typical bone density: 1900 kg/m3 -->
-<!--Density of Al: 2700 kg/m3-->
-<!--Reference for strength of some mouse hindlimb muscle:
-    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4549925/
-    Maximal force generation was about 40g, i.e. ca. 0.4N.
-    -->
+<sdf version="1.5">
+	<model name="cheesy_reborn_model">
+		<link name="Pelvis">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Pelvis_convex_hull">
+				<pose>3.3899956179084256e-05 3.4420595169067383 0.004129886627197266 -0.847338080406189 7.769108023580884e-09 1.7227140602926738e-08</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Pelvis.dae</uri>
+						<scale>0.9999999403953552 0.9999999403953552 1.0</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Pelvis">
+				<pose>3.3899956179084256e-05 3.4420595169067383 0.004129886627197266 -0.847338080406189 7.769108023580884e-09 1.7227140602926738e-08</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Pelvis.dae</uri>
+						<scale>0.9999999403953552 0.9999999403953552 1.0</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Spine1">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine1_convex_hull">
+				<pose>4.814630187865987e-07 1.1228710412979126 0.24692630767822266 -0.7101958990097046 2.4362613260109356e-08 6.569906219056065e-08</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine1.dae</uri>
+						<scale>0.9999998807907104 0.9999998807907104 1.0</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine1">
+				<pose>4.814630187865987e-07 1.1228710412979126 0.24692630767822266 -0.7101958990097046 2.4362613260109356e-08 6.569906219056065e-08</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine1.dae</uri>
+						<scale>0.9999998807907104 0.9999998807907104 1.0</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Spine2">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine2_convex_hull">
+				<pose>-1.9439178231550613e-06 1.09673011302948 0.2162914276123047 -0.6968561410903931 7.484364346055372e-07 2.0603988559741993e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine2.dae</uri>
+						<scale>1.0 0.9999998807907104 1.000000238418579</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine2">
+				<pose>-1.9439178231550613e-06 1.09673011302948 0.2162914276123047 -0.6968561410903931 7.484364346055372e-07 2.0603988559741993e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine2.dae</uri>
+						<scale>1.0 0.9999998807907104 1.000000238418579</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Spine3">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine3_convex_hull">
+				<pose>8.990030437416863e-06 1.098745584487915 0.2315518856048584 -0.6526344418525696 -4.132751655561151e-06 -1.221206912305206e-05</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine3.dae</uri>
+						<scale>1.0000007152557373 1.0000004768371582 1.0000003576278687</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine3">
+				<pose>8.990030437416863e-06 1.098745584487915 0.2315518856048584 -0.6526344418525696 -4.132751655561151e-06 -1.221206912305206e-05</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine3.dae</uri>
+						<scale>1.0000007152557373 1.0000004768371582 1.0000003576278687</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Spine4">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine4_convex_hull">
+				<pose>1.9294655430712737e-05 0.971977949142456 0.14865922927856445 -0.546715259552002 1.543113228308357e-07 5.503767397385673e-07</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine4.dae</uri>
+						<scale>1.0000008344650269 1.000000238418579 1.0000005960464478</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine4">
+				<pose>1.9294655430712737e-05 0.971977949142456 0.14865922927856445 -0.546715259552002 1.543113228308357e-07 5.503767397385673e-07</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine4.dae</uri>
+						<scale>1.0000008344650269 1.000000238418579 1.0000005960464478</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Spine5">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine5_convex_hull">
+				<pose>0.0004275373066775501 1.036232352256775 0.18069857358932495 -0.39953774213790894 -2.1954052442652028e-07 -1.0843152722372906e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine5.dae</uri>
+						<scale>1.000001072883606 1.0000007152557373 1.0000004768371582</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine5">
+				<pose>0.0004275373066775501 1.036232352256775 0.18069857358932495 -0.39953774213790894 -2.1954052442652028e-07 -1.0843152722372906e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine5.dae</uri>
+						<scale>1.000001072883606 1.0000007152557373 1.0000004768371582</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Spine6">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine6_convex_hull">
+				<pose>1.939572575793136e-05 0.9302753210067749 0.18441423773765564 -0.30026763677597046 -4.367035444374778e-08 -2.88678279503074e-07</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine6.dae</uri>
+						<scale>1.0000016689300537 1.000001072883606 1.0000008344650269</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine6">
+				<pose>1.939572575793136e-05 0.9302753210067749 0.18441423773765564 -0.30026763677597046 -4.367035444374778e-08 -2.88678279503074e-07</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine6.dae</uri>
+						<scale>1.0000016689300537 1.000001072883606 1.0000008344650269</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Spine7">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine7_convex_hull">
+				<pose>2.012665026995819e-05 0.8435171842575073 0.13683053851127625 -0.2471584677696228 1.0315070575472873e-08 8.305170240419102e-08</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine7.dae</uri>
+						<scale>1.0000011920928955 1.0000009536743164 1.0000007152557373</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine7">
+				<pose>2.012665026995819e-05 0.8435171842575073 0.13683053851127625 -0.2471584677696228 1.0315070575472873e-08 8.305170240419102e-08</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine7.dae</uri>
+						<scale>1.0000011920928955 1.0000009536743164 1.0000007152557373</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Spine8">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine8_convex_hull">
+				<pose>0.0007736221305094659 0.0785512924194336 -0.7225494980812073 -0.15411518514156342 4.358831162676324e-08 5.64561560167931e-07</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine8.dae</uri>
+						<scale>1.0000017881393433 1.0000016689300537 1.0000008344650269</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine8">
+				<pose>0.0007736221305094659 0.0785512924194336 -0.7225494980812073 -0.15411518514156342 4.358831162676324e-08 5.64561560167931e-07</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine8.dae</uri>
+						<scale>1.0000017881393433 1.0000016689300537 1.0000008344650269</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Spine9">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine9_convex_hull">
+				<pose>-0.00020878532086499035 0.15958353877067566 -2.833378553390503 -0.03449384495615959 3.7767802218979796e-09 2.1905981384406914e-07</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine9.dae</uri>
+						<scale>1.0000019073486328 1.0000020265579224 1.000001311302185</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine9">
+				<pose>-0.00020878532086499035 0.15958353877067566 -2.833378553390503 -0.03449384495615959 3.7767802218979796e-09 2.1905981384406914e-07</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine9.dae</uri>
+						<scale>1.0000019073486328 1.0000020265579224 1.000001311302185</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Spine10">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine10_convex_hull">
+				<pose>-0.0032589256297796965 0.05646321550011635 -2.8834316730499268 -0.004884479567408562 7.06165748098897e-09 2.892460088332882e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine10.dae</uri>
+						<scale>1.0000015497207642 1.000002145767212 1.0000009536743164</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine10">
+				<pose>-0.0032589256297796965 0.05646321550011635 -2.8834316730499268 -0.004884479567408562 7.06165748098897e-09 2.892460088332882e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine10.dae</uri>
+						<scale>1.0000015497207642 1.000002145767212 1.0000009536743164</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Spine11">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine11_convex_hull">
+				<pose>-0.0018684490351006389 0.27969586849212646 -2.735765218734741 0.1019154042005539 -1.4549890181569936e-07 2.85276382783195e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine11.dae</uri>
+						<scale>1.000002384185791 1.0000030994415283 1.0000014305114746</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine11">
+				<pose>-0.0018684490351006389 0.27969586849212646 -2.735765218734741 0.1019154042005539 -1.4549890181569936e-07 2.85276382783195e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine11.dae</uri>
+						<scale>1.000002384185791 1.0000030994415283 1.0000014305114746</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Spine12">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine12_convex_hull">
+				<pose>0.00106889009475708 0.4474680423736572 -2.5220069885253906 0.1482650339603424 -2.4524715058760194e-07 3.3021372018993134e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine12.dae</uri>
+						<scale>1.0000020265579224 1.0000027418136597 1.0000008344650269</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine12">
+				<pose>0.00106889009475708 0.4474680423736572 -2.5220069885253906 0.1482650339603424 -2.4524715058760194e-07 3.3021372018993134e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine12.dae</uri>
+						<scale>1.0000020265579224 1.0000027418136597 1.0000008344650269</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Spine13">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine13_convex_hull">
+				<pose>-1.7706821381580085e-05 0.5024294853210449 -2.519038677215576 0.18742746114730835 -3.601459184210398e-07 3.831758931482909e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine13.dae</uri>
+						<scale>1.000001311302185 1.0000029802322388 1.0000009536743164</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine13">
+				<pose>-1.7706821381580085e-05 0.5024294853210449 -2.519038677215576 0.18742746114730835 -3.601459184210398e-07 3.831758931482909e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine13.dae</uri>
+						<scale>1.000001311302185 1.0000029802322388 1.0000009536743164</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Spine14">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine14_convex_hull">
+				<pose>0.00015961972530931234 0.6270172595977783 -2.064500093460083 0.23947536945343018 -5.079320430922962e-07 4.221718427288579e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine14.dae</uri>
+						<scale>1.000002145767212 1.0000040531158447 1.0000015497207642</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine14">
+				<pose>0.00015961972530931234 0.6270172595977783 -2.064500093460083 0.23947536945343018 -5.079320430922962e-07 4.221718427288579e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine14.dae</uri>
+						<scale>1.000002145767212 1.0000040531158447 1.0000015497207642</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Spine15">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine15_convex_hull">
+				<pose>0.0002818357606884092 0.7504901885986328 -1.7633252143859863 0.30057063698768616 -6.95996277499944e-07 4.596228336595232e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine15.dae</uri>
+						<scale>1.0000015497207642 1.000003457069397 1.0000016689300537</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine15">
+				<pose>0.0002818357606884092 0.7504901885986328 -1.7633252143859863 0.30057063698768616 -6.95996277499944e-07 4.596228336595232e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine15.dae</uri>
+						<scale>1.0000015497207642 1.000003457069397 1.0000016689300537</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Spine16">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine16_convex_hull">
+				<pose>-3.0048229746171273e-05 0.790217399597168 -1.3495283126831055 0.3793678879737854 -1.0971410802085302e-06 5.714484814234311e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine16.dae</uri>
+						<scale>1.000001311302185 1.0000041723251343 1.0000022649765015</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine16">
+				<pose>-3.0048229746171273e-05 0.790217399597168 -1.3495283126831055 0.3793678879737854 -1.0971410802085302e-06 5.714484814234311e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine16.dae</uri>
+						<scale>1.000001311302185 1.0000041723251343 1.0000022649765015</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Spine17">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine17_convex_hull">
+				<pose>-0.00032772228587418795 0.6986613273620605 -0.9759669303894043 0.39068424701690674 -8.93730032203166e-07 4.51684218205628e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine17.dae</uri>
+						<scale>1.0000007152557373 1.0000039339065552 1.0000017881393433</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine17">
+				<pose>-0.00032772228587418795 0.6986613273620605 -0.9759669303894043 0.39068424701690674 -8.93730032203166e-07 4.51684218205628e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine17.dae</uri>
+						<scale>1.0000007152557373 1.0000039339065552 1.0000017881393433</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="ribcage">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001ribcage_convex_hull">
+				<pose>-1.2707613677775953e-05 0.4670299291610718 -0.5972540378570557 0.09659077972173691 -8.801438866612443e-08 1.8209444760941551e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001ribcage.dae</uri>
+						<scale>1.0000007152557373 0.9999999403953552 1.0000017881393433</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001ribcage">
+				<pose>-1.2707613677775953e-05 0.4670299291610718 -0.5972540378570557 0.09659077972173691 -8.801438866612443e-08 1.8209444760941551e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001ribcage.dae</uri>
+						<scale>1.0000007152557373 0.9999999403953552 1.0000017881393433</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Neck1">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine1_ncl1_1_convex_hull">
+				<pose>-0.00023434724425897002 0.2459787130355835 -0.04334104061126709 -1.5707961320877075 -0.046820830553770065 1.5708009004592896</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine1_ncl1_1.dae</uri>
+						<scale>1.000002145767212 1.0000019073486328 1.0000020265579224</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine1_ncl1_1">
+				<pose>-0.00023434724425897002 0.2459787130355835 -0.04334104061126709 -1.5707961320877075 -0.046820830553770065 1.5708009004592896</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine1_ncl1_1.dae</uri>
+						<scale>1.000002145767212 1.0000019073486328 1.0000020265579224</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Neck2">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine2_ncl1_1_convex_hull">
+				<pose>-0.00021047542395535856 0.22626827657222748 -0.08494710922241211 -0.3208392560482025 1.1903456652362365e-05 7.356446440098807e-05</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine2_ncl1_1.dae</uri>
+						<scale>1.0000040531158447 1.0000001192092896 1.0000025033950806</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine2_ncl1_1">
+				<pose>-0.00021047542395535856 0.22626827657222748 -0.08494710922241211 -0.3208392560482025 1.1903456652362365e-05 7.356446440098807e-05</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine2_ncl1_1.dae</uri>
+						<scale>1.0000040531158447 1.0000001192092896 1.0000025033950806</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Neck3">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine3_ncl1_1_convex_hull">
+				<pose>1.3058976037427783e-05 0.22332429885864258 -0.05371284484863281 -0.4926895797252655 8.222083351938636e-07 3.269866283517331e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine3_ncl1_1.dae</uri>
+						<scale>0.999998927116394 1.0000081062316895 1.000004768371582</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine3_ncl1_1">
+				<pose>1.3058976037427783e-05 0.22332429885864258 -0.05371284484863281 -0.4926895797252655 8.222083351938636e-07 3.269866283517331e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine3_ncl1_1.dae</uri>
+						<scale>0.999998927116394 1.0000081062316895 1.000004768371582</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Neck4">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine4_ncl1_1_convex_hull">
+				<pose>1.1682184776873328e-05 0.2207784652709961 -0.03806352615356445 -0.5225954651832581 1.6391752524214098e-06 6.129808753030375e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine4_ncl1_1.dae</uri>
+						<scale>0.9999992847442627 1.0000081062316895 1.0000048875808716</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine4_ncl1_1">
+				<pose>1.1682184776873328e-05 0.2207784652709961 -0.03806352615356445 -0.5225954651832581 1.6391752524214098e-06 6.129808753030375e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine4_ncl1_1.dae</uri>
+						<scale>0.9999992847442627 1.0000081062316895 1.0000048875808716</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Neck5">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine5_ncl1_1_convex_hull">
+				<pose>6.73203612677753e-06 0.2212362289428711 -0.02194201946258545 -0.6888173818588257 3.1116326226765523e-06 8.674642231198959e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine5_ncl1_1.dae</uri>
+						<scale>1.0000007152557373 1.0000067949295044 1.0000050067901611</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine5_ncl1_1">
+				<pose>6.73203612677753e-06 0.2212362289428711 -0.02194201946258545 -0.6888173818588257 3.1116326226765523e-06 8.674642231198959e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine5_ncl1_1.dae</uri>
+						<scale>1.0000007152557373 1.0000067949295044 1.0000050067901611</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Neck6">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine6_ncl1_1_convex_hull">
+				<pose>3.882749297190458e-06 0.18973636627197266 -0.01616191864013672 -0.6789201498031616 3.428551053730189e-06 9.709063306218013e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine6_ncl1_1.dae</uri>
+						<scale>1.000001072883606 1.0000070333480835 1.0000053644180298</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine6_ncl1_1">
+				<pose>3.882749297190458e-06 0.18973636627197266 -0.01616191864013672 -0.6789201498031616 3.428551053730189e-06 9.709063306218013e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine6_ncl1_1.dae</uri>
+						<scale>1.000001072883606 1.0000070333480835 1.0000053644180298</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Neck7">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine7_ncl1_1_convex_hull">
+				<pose>2.018949089688249e-05 0.2713899612426758 0.3295314311981201 -0.5998835563659668 3.46485330737778e-06 1.1203262147319037e-05</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine7_ncl1_1.dae</uri>
+						<scale>1.000001311302185 1.000007152557373 1.0000057220458984</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine7_ncl1_1">
+				<pose>2.018949089688249e-05 0.2713899612426758 0.3295314311981201 -0.5998835563659668 3.46485330737778e-06 1.1203262147319037e-05</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine7_ncl1_1.dae</uri>
+						<scale>1.000001311302185 1.000007152557373 1.0000057220458984</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Neck8">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Spine8_ncl1_1_convex_hull">
+				<pose>-2.5216977519448847e-06 0.19587326049804688 0.11852598190307617 -0.5897372364997864 2.7619289539870806e-06 9.093612789001781e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Spine8_ncl1_1.dae</uri>
+						<scale>1.0000011920928955 1.0000072717666626 1.0000054836273193</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Spine8_ncl1_1">
+				<pose>-2.5216977519448847e-06 0.19587326049804688 0.11852598190307617 -0.5897372364997864 2.7619289539870806e-06 9.093612789001781e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Spine8_ncl1_1.dae</uri>
+						<scale>1.0000011920928955 1.0000072717666626 1.0000054836273193</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Head">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Had_convex_hull">
+				<pose>-1.4205905245034955e-05 5.391939163208008 1.437556266784668 -0.03844676911830902 9.803171963085333e-08 5.099452664580895e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Had.dae</uri>
+						<scale>1.0000057220458984 0.9999995827674866 1.0000046491622925</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<collision name="COL_Mouse001HeadJaw_convex_hull">
+				<pose>1.0928051779046655e-05 5.250744342803955 -0.6792905330657959 -0.03844677284359932 9.803171963085333e-08 5.099452664580895e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001HeadJaw.dae</uri>
+						<scale>1.0000011920928955 1.0000064373016357 1.000004768371582</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Had">
+				<pose>-1.4205905245034955e-05 5.391939163208008 1.437556266784668 -0.03844676911830902 9.803171963085333e-08 5.099452664580895e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Had.dae</uri>
+						<scale>1.0000057220458984 0.9999995827674866 1.0000046491622925</scale>
+					</mesh>
+				</geometry>
+			</visual>
+			<visual name="VIS_Mouse001HeadJaw">
+				<pose>1.0928051779046655e-05 5.250744342803955 -0.6792905330657959 -0.03844677284359932 9.803171963085333e-08 5.099452664580895e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001HeadJaw.dae</uri>
+						<scale>1.0000011920928955 1.0000064373016357 1.000004768371582</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Pelvis_001">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+		</link>
+		<link name="RFemur">
+			<pose>-8.94069671631e-08 4.35125398636 8.94069671631e-08 1.27409029006958 -0.5410520434379578 1.2915436029434204</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLeg1_ncl1_1_convex_hull">
+				<pose>0.5559216737747192 5.64371919631958 0.12049657106399536 -0.2787648141384125 0.04148894548416138 0.29364851117134094</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLeg1_ncl1_1.dae</uri>
+						<scale>1.0000003576278687 0.9999999403953552 0.9999996423721313</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLeg1_ncl1_1">
+				<pose>0.5559216737747192 5.64371919631958 0.12049657106399536 -0.2787648141384125 0.04148894548416138 0.29364851117134094</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLeg1_ncl1_1.dae</uri>
+						<scale>1.0000003576278687 0.9999999403953552 0.9999996423721313</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RTibia">
+			<pose>-4.61941431983 -0.00281854977726 9.08478025416 -1.3295674624114864 -0.8282590108853073 1.3117825648649375</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLeg2_ncl1_1_convex_hull">
+				<pose>0.2694428563117981 5.697275638580322 0.5560874342918396 2.3268885612487793 -0.10408864170312881 0.04494592547416687</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLeg2_ncl1_1.dae</uri>
+						<scale>1.000003457069397 0.9999977946281433 1.000001072883606</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLeg2_ncl1_1">
+				<pose>0.2694428563117981 5.697275638580322 0.5560874342918396 2.3268885612487793 -0.10408864170312881 0.04494592547416687</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLeg2_ncl1_1.dae</uri>
+						<scale>1.000003457069397 0.9999977946281433 1.000001072883606</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RTarsus">
+			<pose>-5.23090213609 9.64940360869 0.665648727655 0.3681568683277842 -0.7736471569366751 1.4299839855173806</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegAnkle_ncl1_1_convex_hull">
+				<pose>-0.044947702437639236 0.5531708002090454 -0.6910443305969238 0.5514342188835144 -0.011936614289879799 0.042185377329587936</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegAnkle_ncl1_1.dae</uri>
+						<scale>1.0000019073486328 1.0000007152557373 1.0000017881393433</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegAnkle_ncl1_1">
+				<pose>-0.044947702437639236 0.5531708002090454 -0.6910443305969238 0.5514342188835144 -0.011936614289879799 0.042185377329587936</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegAnkle_ncl1_1.dae</uri>
+						<scale>1.0000019073486328 1.0000007152557373 1.0000017881393433</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RMetatarsus1">
+			<pose>-6.00903441313 10.6918261565 0.915433424136 0.9571309125664369 -0.5911193294301831 1.288671092067442</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit51_ncl1_1_convex_hull">
+				<pose>0.022606052458286285 1.9484578371047974 0.03112103044986725 0.04677046462893486 -0.006030947435647249 0.2564544379711151</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit51_ncl1_1.dae</uri>
+						<scale>1.0000005960464478 1.0000003576278687 1.0000005960464478</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit51_ncl1_1">
+				<pose>0.022606052458286285 1.9484578371047974 0.03112103044986725 0.04677046462893486 -0.006030947435647249 0.2564544379711151</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit51_ncl1_1.dae</uri>
+						<scale>1.0000005960464478 1.0000003576278687 1.0000005960464478</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RBPhalange1">
+			<pose>-8.45740270025 9.69339445414 3.359761504 0.9637420001956795 -0.5768171761090515 1.276680529888914</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit52_ncl1_1_convex_hull">
+				<pose>-0.012645761482417583 0.20364277064800262 0.17950622737407684 0.038251541554927826 -0.00540116848424077 0.2805385887622833</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit52_ncl1_1.dae</uri>
+						<scale>1.0000033378601074 1.0 1.0000011920928955</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit52_ncl1_1">
+				<pose>-0.012645761482417583 0.20364277064800262 0.17950622737407684 0.038251541554927826 -0.00540116848424077 0.2805385887622833</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit52_ncl1_1.dae</uri>
+						<scale>1.0000033378601074 1.0 1.0000011920928955</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RMetatarsus2">
+			<pose>-6.92118196927 9.88966006802 1.47209281399 0.9196470055849559 -0.7055445831165111 1.3906618445232064</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit41_ncl1_1_convex_hull">
+				<pose>0.019859571009874344 2.074451446533203 -0.014844030141830444 0.02426556684076786 -0.001413880498148501 0.1164240837097168</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit41_ncl1_1.dae</uri>
+						<scale>1.0000016689300537 1.0000007152557373 1.0000017881393433</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit41_ncl1_1">
+				<pose>0.019859571009874344 2.074451446533203 -0.014844030141830444 0.02426556684076786 -0.001413880498148501 0.1164240837097168</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit41_ncl1_1.dae</uri>
+						<scale>1.0000016689300537 1.0000007152557373 1.0000017881393433</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RBPhalange2">
+			<pose>-9.50721922207 8.39206252403 3.74570078677 0.9104538594550322 -0.7193782216262936 1.4047246586032</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit42_ncl1_1_convex_hull">
+				<pose>-0.021690454334020615 -0.14598773419857025 0.2506820261478424 0.029604613780975342 -0.0014765782980248332 0.09968466311693192</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit42_ncl1_1.dae</uri>
+						<scale>1.000003695487976 1.0000009536743164 1.0000017881393433</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit42_ncl1_1">
+				<pose>-0.021690454334020615 -0.14598773419857025 0.2506820261478424 0.029604613780975342 -0.0014765782980248332 0.09968466311693192</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit42_ncl1_1.dae</uri>
+						<scale>1.000003695487976 1.0000009536743164 1.0000017881393433</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RMetatarsus3">
+			<pose>-7.06513331124 9.4236367048 1.15804861708 0.8757023786938452 -0.779797963514649 1.4528856848553218</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit31_ncl1_1_convex_hull">
+				<pose>-0.009379296563565731 2.035922050476074 -0.010036472231149673 0.024432485923171043 -0.0004127933061681688 0.03380550816655159</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit31_ncl1_1.dae</uri>
+						<scale>1.0000008344650269 0.9999999403953552 1.0</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit31_ncl1_1">
+				<pose>-0.009379296563565731 2.035922050476074 -0.010036472231149673 0.024432485923171043 -0.0004127933061681688 0.03380550816655159</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit31_ncl1_1.dae</uri>
+						<scale>1.0000008344650269 0.9999999403953552 1.0</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RBPhalange3">
+			<pose>-9.65899471228 7.71458419155 3.18292346724 0.8865374285302495 -0.7663332526609107 1.4373705995084576</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit32_ncl1_1_convex_hull">
+				<pose>-0.030953697860240936 -0.15989868342876434 0.24147123098373413 0.029869649559259415 -0.0008873193291947246 0.05940938740968704</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit32_ncl1_1.dae</uri>
+						<scale>1.0000033378601074 1.0000004768371582 1.0000022649765015</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit32_ncl1_1">
+				<pose>-0.030953697860240936 -0.15989868342876434 0.24147123098373413 0.029869649559259415 -0.0008873193291947246 0.05940938740968704</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit32_ncl1_1.dae</uri>
+						<scale>1.0000033378601074 1.0000004768371582 1.0000022649765015</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RMetatarsus4">
+			<pose>-6.84113863177 9.27622887228 0.612974153932 0.8193284368684284 -0.8351307423888038 1.5325446521658257</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit21_ncl1_1_convex_hull">
+				<pose>-0.024745866656303406 2.1476588249206543 0.006352700293064117 0.018812909722328186 0.0005286012310534716 -0.05616246536374092</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit21_ncl1_1.dae</uri>
+						<scale>1.0000008344650269 1.0000005960464478 1.0000025033950806</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit21_ncl1_1">
+				<pose>-0.024745866656303406 2.1476588249206543 0.006352700293064117 0.018812909722328186 0.0005286012310534716 -0.05616246536374092</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit21_ncl1_1.dae</uri>
+						<scale>1.0000008344650269 1.0000005960464478 1.0000025033950806</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RBPhalange4">
+			<pose>-9.50519135064 7.32359800052 2.47136754396 0.8018751463463298 -0.8351307423888038 1.5325446521658257</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit22_ncl1_1_convex_hull">
+				<pose>-0.007308652624487877 -0.06538569182157516 0.21106061339378357 0.03754197061061859 0.0010700954589992762 -0.056977029889822006</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit22_ncl1_1.dae</uri>
+						<scale>1.0000033378601074 1.000000238418579 1.0000022649765015</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit22_ncl1_1">
+				<pose>-0.007308652624487877 -0.06538569182157516 0.21106061339378357 0.03754197061061859 0.0010700954589992762 -0.056977029889822006</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit22_ncl1_1.dae</uri>
+						<scale>1.0000033378601074 1.000000238418579 1.0000022649765015</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RMetatarsus5">
+			<pose>-7.20974574698 8.78996949237 0.399814096407 0.759194058621575 -0.928588461143983 1.6649219716504313</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+		</link>
+		<link name="RBPhalange5">
+			<pose>-8.43729797817 7.66026208184 1.15477576916 0.6038491211492728 -0.9158334287500564 1.6846450504191697</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit12_ncl1_1_convex_hull">
+				<pose>-0.007220969535410404 0.34312257170677185 0.11257718503475189 0.12469018995761871 0.011166557669639587 -0.17840352654457092</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit12_ncl1_1.dae</uri>
+						<scale>1.0000019073486328 1.0000019073486328 1.0000022649765015</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit12_ncl1_1">
+				<pose>-0.007220969535410404 0.34312257170677185 0.11257718503475189 0.12469018995761871 0.011166557669639587 -0.17840352654457092</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit12_ncl1_1.dae</uri>
+						<scale>1.0000019073486328 1.0000019073486328 1.0000022649765015</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Pelvis_002">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+		</link>
+		<link name="LFemur">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLeg1_convex_hull">
+				<pose>-0.5558737516403198 5.64373779296875 0.12058134377002716 -0.27877283096313477 -0.04149116948246956 -0.2936536967754364</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLeg1.dae</uri>
+						<scale>1.000002384185791 1.0000017881393433 1.0000003576278687</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLeg1">
+				<pose>-0.5558737516403198 5.64373779296875 0.12058134377002716 -0.27877283096313477 -0.04149116948246956 -0.2936536967754364</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLeg1.dae</uri>
+						<scale>1.000002384185791 1.0000017881393433 1.0000003576278687</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LTibia">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLeg2_convex_hull">
+				<pose>-0.26915815472602844 5.6972856521606445 0.5562488436698914 2.326467514038086 0.10477619618177414 -0.04526975750923157</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLeg2.dae</uri>
+						<scale>1.000004768371582 0.9999966025352478 1.0000020265579224</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLeg2">
+				<pose>-0.26915815472602844 5.6972856521606445 0.5562488436698914 2.326467514038086 0.10477619618177414 -0.04526975750923157</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLeg2.dae</uri>
+						<scale>1.000004768371582 0.9999966025352478 1.0000020265579224</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LTarsus">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegAnkle_convex_hull">
+				<pose>0.044562630355358124 0.5531947612762451 -0.6910832524299622 0.5497508645057678 0.011326015926897526 -0.04015691950917244</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegAnkle.dae</uri>
+						<scale>0.9999955296516418 1.000005841255188 1.0000016689300537</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegAnkle">
+				<pose>0.044562630355358124 0.5531947612762451 -0.6910832524299622 0.5497508645057678 0.011326015926897526 -0.04015691950917244</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegAnkle.dae</uri>
+						<scale>0.9999955296516418 1.000005841255188 1.0000016689300537</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LMetatarsus1">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit51_convex_hull">
+				<pose>-0.02256651595234871 1.9515306949615479 0.030732642859220505 0.04677191004157066 0.006031553260982037 -0.2564563453197479</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit51.dae</uri>
+						<scale>0.9999974966049194 1.0000070333480835 1.0000046491622925</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit51">
+				<pose>-0.02256651595234871 1.9515306949615479 0.030732642859220505 0.04677191004157066 0.006031553260982037 -0.2564563453197479</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit51.dae</uri>
+						<scale>0.9999974966049194 1.0000070333480835 1.0000046491622925</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LBPhalange1">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit52_convex_hull">
+				<pose>0.01215895265340805 1.4316027164459229 0.1789941042661667 0.03824968636035919 0.005401202477514744 -0.2805347144603729</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit52.dae</uri>
+						<scale>1.0000001192092896 1.0000039339065552 1.0000025033950806</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit52">
+				<pose>0.01215895265340805 1.4316027164459229 0.1789941042661667 0.03824968636035919 0.005401202477514744 -0.2805347144603729</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit52.dae</uri>
+						<scale>1.0000001192092896 1.0000039339065552 1.0000025033950806</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LMetatarsus2">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit41_convex_hull">
+				<pose>-0.02025878056883812 2.0813746452331543 -0.014364351518452168 0.024267597123980522 0.0014142435975372791 -0.1164248138666153</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit41.dae</uri>
+						<scale>0.9999959468841553 1.000005841255188 1.0000033378601074</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit41">
+				<pose>-0.02025878056883812 2.0813746452331543 -0.014364351518452168 0.024267597123980522 0.0014142435975372791 -0.1164248138666153</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit41.dae</uri>
+						<scale>0.9999959468841553 1.000005841255188 1.0000033378601074</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LBPhalange2">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit42_convex_hull">
+				<pose>0.021599257364869118 2.1280415058135986 0.2528211772441864 0.02961486391723156 0.0014772572321817279 -0.09968239814043045</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit42.dae</uri>
+						<scale>0.9999967217445374 1.0000027418136597 1.000003457069397</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit42">
+				<pose>0.021599257364869118 2.1280415058135986 0.2528211772441864 0.02961486391723156 0.0014772572321817279 -0.09968239814043045</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit42.dae</uri>
+						<scale>0.9999967217445374 1.0000027418136597 1.000003457069397</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LMetatarsus3">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit31_convex_hull">
+				<pose>0.009472325444221497 2.0432660579681396 -0.008254134096205235 0.02443462796509266 0.00041295206756331027 -0.033805426210165024</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit31.dae</uri>
+						<scale>0.9999939203262329 1.000004768371582 1.0000026226043701</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit31">
+				<pose>0.009472325444221497 2.0432660579681396 -0.008254134096205235 0.02443462796509266 0.00041295206756331027 -0.033805426210165024</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit31.dae</uri>
+						<scale>0.9999939203262329 1.000004768371582 1.0000026226043701</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LBPhalange3">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit32_convex_hull">
+				<pose>0.03042544610798359 2.077442169189453 0.24255546927452087 0.029876256361603737 0.0008876330684870481 -0.05940713733434677</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit32.dae</uri>
+						<scale>0.9999987483024597 1.0000040531158447 1.0000032186508179</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit32">
+				<pose>0.03042544610798359 2.077442169189453 0.24255546927452087 0.029876256361603737 0.0008876330684870481 -0.05940713733434677</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit32.dae</uri>
+						<scale>0.9999987483024597 1.0000040531158447 1.0000032186508179</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LMetatarsus4">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit21_convex_hull">
+				<pose>0.021600808948278427 2.1470773220062256 0.006270173937082291 0.01881588250398636 -0.0005286677042022347 0.056163303554058075</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit21.dae</uri>
+						<scale>0.9999945759773254 1.0000051259994507 1.0000053644180298</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit21">
+				<pose>0.021600808948278427 2.1470773220062256 0.006270173937082291 0.01881588250398636 -0.0005286677042022347 0.056163303554058075</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit21.dae</uri>
+						<scale>0.9999945759773254 1.0000051259994507 1.0000053644180298</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LBPhalange4">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit22_convex_hull">
+				<pose>0.006363662891089916 2.0300862789154053 0.21177896857261658 0.03754336014389992 -0.0010701086139306426 0.05697696655988693</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit22.dae</uri>
+						<scale>0.9999982118606567 1.000004768371582 1.0000052452087402</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit22">
+				<pose>0.006363662891089916 2.0300862789154053 0.21177896857261658 0.03754336014389992 -0.0010701086139306426 0.05697696655988693</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit22.dae</uri>
+						<scale>0.9999982118606567 1.000004768371582 1.0000052452087402</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LMetatarsus5">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit11_convex_hull">
+				<pose>0.00033623864874243736 1.0359222888946533 0.015337403863668442 -0.0120955565944314 0.0010559652000665665 0.17418399453163147</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit11.dae</uri>
+						<scale>0.9999945163726807 1.0000063180923462 1.0000029802322388</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit11">
+				<pose>0.00033623864874243736 1.0359222888946533 0.015337403863668442 -0.0120955565944314 0.0010559652000665665 0.17418399453163147</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit11.dae</uri>
+						<scale>0.9999945163726807 1.0000063180923462 1.0000029802322388</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LBPhalange5">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit12_convex_hull">
+				<pose>0.006816286593675613 1.1372405290603638 0.11129294335842133 0.12469588220119476 -0.0111672542989254 0.1784043163061142</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit12.dae</uri>
+						<scale>0.999995231628418 1.0000054836273193 1.0000022649765015</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit12">
+				<pose>0.006816286593675613 1.1372405290603638 0.11129294335842133 0.12469588220119476 -0.0111672542989254 0.1784043163061142</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit12.dae</uri>
+						<scale>0.999995231628418 1.0000054836273193 1.0000022649765015</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Pelvis_003">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+		</link>
+		<link name="Tail1">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail1_convex_hull">
+				<pose>2.4908665636758087e-06 0.5797977447509766 0.12912440299987793 2.382506847381592 3.0923854410502827e-07 -1.2334896837273845e-07</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail1.dae</uri>
+						<scale>1.0000038146972656 0.9999966621398926 1.0000016689300537</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail1">
+				<pose>2.4908665636758087e-06 0.5797977447509766 0.12912440299987793 2.382506847381592 3.0923854410502827e-07 -1.2334896837273845e-07</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail1.dae</uri>
+						<scale>1.0000038146972656 0.9999966621398926 1.0000016689300537</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail2">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail2_convex_hull">
+				<pose>2.0365366708574584e-06 0.509458065032959 0.10495829582214355 2.5015954971313477 -3.1440086445400084e-07 1.041897448317286e-07</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail2.dae</uri>
+						<scale>1.0000051259994507 0.9999980926513672 1.0000039339065552</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail2">
+				<pose>2.0365366708574584e-06 0.509458065032959 0.10495829582214355 2.5015954971313477 -3.1440086445400084e-07 1.041897448317286e-07</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail2.dae</uri>
+						<scale>1.0000051259994507 0.9999980926513672 1.0000039339065552</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail3">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail3_convex_hull">
+				<pose>1.9725298443518113e-06 0.5421781539916992 0.18921589851379395 2.7654922008514404 7.223854936455609e-08 -1.3748692850867883e-08</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail3.dae</uri>
+						<scale>1.0000022649765015 0.9999996423721313 1.0000030994415283</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail3">
+				<pose>1.9725298443518113e-06 0.5421781539916992 0.18921589851379395 2.7654922008514404 7.223854936455609e-08 -1.3748692850867883e-08</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail3.dae</uri>
+						<scale>1.0000022649765015 0.9999996423721313 1.0000030994415283</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail4">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail4_convex_hull">
+				<pose>-0.0001884296361822635 0.6163778901100159 0.13127946853637695 3.0524656772613525 -0.0011832182062789798 5.276433876133524e-05</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail4.dae</uri>
+						<scale>0.9999991655349731 1.0000025033950806 1.0000015497207642</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail4">
+				<pose>-0.0001884296361822635 0.6163778901100159 0.13127946853637695 3.0524656772613525 -0.0011832182062789798 5.276433876133524e-05</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail4.dae</uri>
+						<scale>0.9999991655349731 1.0000025033950806 1.0000015497207642</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail5">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail5_convex_hull">
+				<pose>8.795976100373082e-06 0.5972079038619995 0.18781909346580505 -2.9212212562561035 0.0005362913361750543 5.933188003837131e-05</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail5.dae</uri>
+						<scale>0.9999966621398926 1.000004768371582 1.0000033378601074</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail5">
+				<pose>8.795976100373082e-06 0.5972079038619995 0.18781909346580505 -2.9212212562561035 0.0005362913361750543 5.933188003837131e-05</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail5.dae</uri>
+						<scale>0.9999966621398926 1.000004768371582 1.0000033378601074</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail6">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail6_convex_hull">
+				<pose>-0.00012421997962519526 0.8409367799758911 0.15228605270385742 -2.708909511566162 -2.3196584152174182e-05 -5.0982876018679235e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail6.dae</uri>
+						<scale>0.9999935626983643 1.0000022649765015 1.0000026226043701</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail6">
+				<pose>-0.00012421997962519526 0.8409367799758911 0.15228605270385742 -2.708909511566162 -2.3196584152174182e-05 -5.0982876018679235e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail6.dae</uri>
+						<scale>0.9999935626983643 1.0000022649765015 1.0000026226043701</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail7">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail7_convex_hull">
+				<pose>-0.0001193392017739825 0.9285519123077393 0.03981304168701172 -2.5217366218566895 4.373177489469526e-06 1.4005521506987861e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail7.dae</uri>
+						<scale>0.9999921917915344 1.0000030994415283 1.000002384185791</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail7">
+				<pose>-0.0001193392017739825 0.9285519123077393 0.03981304168701172 -2.5217366218566895 4.373177489469526e-06 1.4005521506987861e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail7.dae</uri>
+						<scale>0.9999921917915344 1.0000030994415283 1.000002384185791</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail8">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail8_convex_hull">
+				<pose>-0.00014058225497137755 1.0517096519470215 -0.018215179443359375 -2.539637327194214 4.002700370620005e-05 1.2424750821082853e-05</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail8.dae</uri>
+						<scale>0.999993622303009 1.0000053644180298 1.0000028610229492</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail8">
+				<pose>-0.00014058225497137755 1.0517096519470215 -0.018215179443359375 -2.539637327194214 4.002700370620005e-05 1.2424750821082853e-05</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail8.dae</uri>
+						<scale>0.999993622303009 1.0000053644180298 1.0000028610229492</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail9">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail9_convex_hull">
+				<pose>-8.830447040963918e-05 1.0664167404174805 -0.022389890626072884 -2.4957735538482666 -0.00017480837414041162 -5.849458830198273e-05</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail9.dae</uri>
+						<scale>0.999992311000824 1.0000039339065552 1.0000020265579224</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail9">
+				<pose>-8.830447040963918e-05 1.0664167404174805 -0.022389890626072884 -2.4957735538482666 -0.00017480837414041162 -5.849458830198273e-05</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail9.dae</uri>
+						<scale>0.999992311000824 1.0000039339065552 1.0000020265579224</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail10">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail10_convex_hull">
+				<pose>-2.3484753910452127e-05 1.1073966026306152 -0.018520832061767578 -2.5216002464294434 1.0750328328867909e-05 3.4436138776072767e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail10.dae</uri>
+						<scale>0.9999903440475464 1.0000041723251343 1.0000027418136597</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail10">
+				<pose>-2.3484753910452127e-05 1.1073966026306152 -0.018520832061767578 -2.5216002464294434 1.0750328328867909e-05 3.4436138776072767e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail10.dae</uri>
+						<scale>0.9999903440475464 1.0000041723251343 1.0000027418136597</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail11">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail11_convex_hull">
+				<pose>-3.212630326743238e-05 1.1180047988891602 -0.022765636444091797 -2.6148266792297363 8.916082151699811e-06 2.4042265067691915e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail11.dae</uri>
+						<scale>0.9999921917915344 1.0000048875808716 1.000002384185791</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail11">
+				<pose>-3.212630326743238e-05 1.1180047988891602 -0.022765636444091797 -2.6148266792297363 8.916082151699811e-06 2.4042265067691915e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail11.dae</uri>
+						<scale>0.9999921917915344 1.0000048875808716 1.000002384185791</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail12">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail12_convex_hull">
+				<pose>-3.0082283046795055e-05 1.2298226356506348 -0.011793557554483414 -2.7699031829833984 1.9442361008259468e-05 3.655459067886113e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail12.dae</uri>
+						<scale>0.999997615814209 1.0000008344650269 1.0000016689300537</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail12">
+				<pose>-3.0082283046795055e-05 1.2298226356506348 -0.011793557554483414 -2.7699031829833984 1.9442361008259468e-05 3.655459067886113e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail12.dae</uri>
+						<scale>0.999997615814209 1.0000008344650269 1.0000016689300537</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail13">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail13_convex_hull">
+				<pose>-4.195651854388416e-05 1.0744190216064453 0.0014905930729582906 -2.8707797527313232 4.0918286686064675e-05 5.574722308665514e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail13.dae</uri>
+						<scale>1.0000016689300537 0.9999983310699463 1.0000032186508179</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail13">
+				<pose>-4.195651854388416e-05 1.0744190216064453 0.0014905930729582906 -2.8707797527313232 4.0918286686064675e-05 5.574722308665514e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail13.dae</uri>
+						<scale>1.0000016689300537 0.9999983310699463 1.0000032186508179</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail14">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail14_convex_hull">
+				<pose>-5.0186848966404796e-05 1.0617167949676514 0.009150505065917969 -3.0480797290802 0.00013948169362265617 6.526422566821566e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail14.dae</uri>
+						<scale>1.0000085830688477 0.999991774559021 1.000002145767212</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail14">
+				<pose>-5.0186848966404796e-05 1.0617167949676514 0.009150505065917969 -3.0480797290802 0.00013948169362265617 6.526422566821566e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail14.dae</uri>
+						<scale>1.0000085830688477 0.999991774559021 1.000002145767212</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail15">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail15_convex_hull">
+				<pose>-5.02750335726887e-05 1.129244089126587 0.0023756029549986124 2.9653310775756836 0.00013024041254539043 -1.1507957424328197e-05</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail15.dae</uri>
+						<scale>1.0000176429748535 0.9999828934669495 1.000003457069397</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail15">
+				<pose>-5.02750335726887e-05 1.129244089126587 0.0023756029549986124 2.9653310775756836 0.00013024041254539043 -1.1507957424328197e-05</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail15.dae</uri>
+						<scale>1.0000176429748535 0.9999828934669495 1.000003457069397</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail16">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail16_convex_hull">
+				<pose>-5.34177670488134e-05 1.1303529739379883 0.003812789684161544 2.7626352310180664 -2.8014712370350026e-05 5.37260712007992e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail16.dae</uri>
+						<scale>1.000024437904358 0.9999772310256958 1.0000016689300537</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail16">
+				<pose>-5.34177670488134e-05 1.1303529739379883 0.003812789684161544 2.7626352310180664 -2.8014712370350026e-05 5.37260712007992e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail16.dae</uri>
+						<scale>1.000024437904358 0.9999772310256958 1.0000016689300537</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail17">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail17_convex_hull">
+				<pose>-0.00010228253086097538 0.9819259643554688 0.02287101559340954 2.5733819007873535 -2.3312870325753465e-05 6.807406862208154e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail17.dae</uri>
+						<scale>1.0000317096710205 0.999971866607666 1.0000042915344238</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail17">
+				<pose>-0.00010228253086097538 0.9819259643554688 0.02287101559340954 2.5733819007873535 -2.3312870325753465e-05 6.807406862208154e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail17.dae</uri>
+						<scale>1.0000317096710205 0.999971866607666 1.0000042915344238</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail18">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail18_convex_hull">
+				<pose>-0.00017501681577414274 0.922086238861084 0.018197057768702507 2.380490303039551 -1.3012318959226832e-05 5.2055297601327766e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail18.dae</uri>
+						<scale>1.0000325441360474 0.999971866607666 1.0000050067901611</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail18">
+				<pose>-0.00017501681577414274 0.922086238861084 0.018197057768702507 2.380490303039551 -1.3012318959226832e-05 5.2055297601327766e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail18.dae</uri>
+						<scale>1.0000325441360474 0.999971866607666 1.0000050067901611</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail19">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail19_convex_hull">
+				<pose>-0.000273047509836033 0.8410725593566895 0.014000413939356804 2.26035737991333 -1.0549345461186022e-05 4.97431165058515e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail19.dae</uri>
+						<scale>1.0000340938568115 0.999969482421875 1.0000032186508179</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail19">
+				<pose>-0.000273047509836033 0.8410725593566895 0.014000413939356804 2.26035737991333 -1.0549345461186022e-05 4.97431165058515e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail19.dae</uri>
+						<scale>1.0000340938568115 0.999969482421875 1.0000032186508179</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail20">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail20_convex_hull">
+				<pose>-0.0003823622828349471 0.8089694976806641 0.010365244932472706 2.1450207233428955 -1.0949473107757512e-05 5.9572921600192785e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail20.dae</uri>
+						<scale>1.0000331401824951 0.9999704957008362 1.0000048875808716</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail20">
+				<pose>-0.0003823622828349471 0.8089694976806641 0.010365244932472706 2.1450207233428955 -1.0949473107757512e-05 5.9572921600192785e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail20.dae</uri>
+						<scale>1.0000331401824951 0.9999704957008362 1.0000048875808716</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail21">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail21_convex_hull">
+				<pose>-0.0005294724833220243 0.7580971717834473 0.0319519005715847 2.003931999206543 -9.795170626603067e-06 6.262147962843301e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail21.dae</uri>
+						<scale>1.0000288486480713 0.9999752044677734 1.0000029802322388</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail21">
+				<pose>-0.0005294724833220243 0.7580971717834473 0.0319519005715847 2.003931999206543 -9.795170626603067e-06 6.262147962843301e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail21.dae</uri>
+						<scale>1.0000288486480713 0.9999752044677734 1.0000029802322388</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail22">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail22_convex_hull">
+				<pose>-0.000700174190569669 0.7063534259796143 0.020783061161637306 1.866544246673584 -8.81507367012091e-06 6.529238817165606e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail22.dae</uri>
+						<scale>1.0000240802764893 0.9999830722808838 1.0000050067901611</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail22">
+				<pose>-0.000700174190569669 0.7063534259796143 0.020783061161637306 1.866544246673584 -8.81507367012091e-06 6.529238817165606e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail22.dae</uri>
+						<scale>1.0000240802764893 0.9999830722808838 1.0000050067901611</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Tail23">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Tail23_convex_hull">
+				<pose>0.0013111855369061232 1.0252654552459717 -0.0032493923790752888 1.5755198001861572 0.0023461496457457542 -0.0023350941482931376</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Tail23.dae</uri>
+						<scale>1.000014066696167 0.9999914169311523 1.0000028610229492</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Tail23">
+				<pose>0.0013111855369061232 1.0252654552459717 -0.0032493923790752888 1.5755198001861572 0.0023461496457457542 -0.0023350941482931376</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Tail23.dae</uri>
+						<scale>1.000014066696167 0.9999914169311523 1.0000028610229492</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="ribcage_001">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+		</link>
+		<link name="RCollarbone">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RCollarbone_convex_hull">
+				<pose>-0.6152743697166443 2.544588088989258 0.043759819120168686 0.033109139651060104 -0.022274650633335114 1.1843640804290771</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RCollarbone.dae</uri>
+						<scale>0.9999971985816956 0.9999979138374329 1.0000003576278687</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RCollarbone">
+				<pose>-0.6152743697166443 2.544588088989258 0.043759819120168686 0.033109139651060104 -0.022274650633335114 1.1843640804290771</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RCollarbone.dae</uri>
+						<scale>0.9999971985816956 0.9999979138374329 1.0000003576278687</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RHumerus">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLeg1_convex_hull">
+				<pose>1.350299596786499 1.0213103294372559 -1.4830989837646484 2.131619691848755 -1.0302010774612427 0.6065402030944824</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLeg1.dae</uri>
+						<scale>1.0000042915344238 0.9999982714653015 1.0000053644180298</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLeg1">
+				<pose>1.350299596786499 1.0213103294372559 -1.4830989837646484 2.131619691848755 -1.0302010774612427 0.6065402030944824</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLeg1.dae</uri>
+						<scale>1.0000042915344238 0.9999982714653015 1.0000053644180298</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RRadius">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLeg2_convex_hull">
+				<pose>0.010965853929519653 3.0769100189208984 -0.1601378619670868 1.1963415145874023 -0.027309106662869453 0.04007185250520706</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLeg2.dae</uri>
+						<scale>0.9999998211860657 1.000004529953003 1.0000019073486328</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLeg2">
+				<pose>0.010965853929519653 3.0769100189208984 -0.1601378619670868 1.1963415145874023 -0.027309106662869453 0.04007185250520706</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLeg2.dae</uri>
+						<scale>0.9999998211860657 1.000004529953003 1.0000019073486328</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RCarpus">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegAnkle_convex_hull">
+				<pose>-0.04796373471617699 0.5912203788757324 -0.08866825699806213 0.4028395414352417 0.005537307355552912 -0.027116946876049042</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegAnkle.dae</uri>
+						<scale>0.9999797940254211 1.0000146627426147 1.0000014305114746</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegAnkle">
+				<pose>-0.04796373471617699 0.5912203788757324 -0.08866825699806213 0.4028395414352417 0.005537307355552912 -0.027116946876049042</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegAnkle.dae</uri>
+						<scale>0.9999797940254211 1.0000146627426147 1.0000014305114746</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RMetaCarpus1">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit51_convex_hull">
+				<pose>0.02731066197156906 0.6717376112937927 0.01576613448560238 0.02904275804758072 -0.00328009482473135 0.22491374611854553</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit51.dae</uri>
+						<scale>0.9999825358390808 1.0000159740447998 1.0000089406967163</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit51">
+				<pose>0.02731066197156906 0.6717376112937927 0.01576613448560238 0.02904275804758072 -0.00328009482473135 0.22491374611854553</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit51.dae</uri>
+						<scale>0.9999825358390808 1.0000159740447998 1.0000089406967163</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RFPhalange1">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit52_convex_hull">
+				<pose>0.010893701575696468 0.9056949615478516 0.0847967267036438 0.03579231724143028 -0.002532562706619501 0.14126472175121307</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit52.dae</uri>
+						<scale>0.9999852776527405 1.0000110864639282 1.000008225440979</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit52">
+				<pose>0.010893701575696468 0.9056949615478516 0.0847967267036438 0.03579231724143028 -0.002532562706619501 0.14126472175121307</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit52.dae</uri>
+						<scale>0.9999852776527405 1.0000110864639282 1.000008225440979</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RMetaCarpus2">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit41_convex_hull">
+				<pose>-0.029276389628648758 0.95262610912323 0.035095926374197006 0.03871892765164375 -0.000876287987921387 0.045251600444316864</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit41.dae</uri>
+						<scale>0.9999829530715942 1.000017762184143 1.000011920928955</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit41">
+				<pose>-0.029276389628648758 0.95262610912323 0.035095926374197006 0.03871892765164375 -0.000876287987921387 0.045251600444316864</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit41.dae</uri>
+						<scale>0.9999829530715942 1.000017762184143 1.000011920928955</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RFPhalange2">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit42_convex_hull">
+				<pose>-0.009747405536472797 1.2834501266479492 0.13460296392440796 0.01669396087527275 -0.00048559013521298766 0.05815881863236427</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit42.dae</uri>
+						<scale>0.9999871253967285 1.0000096559524536 1.0000112056732178</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit42">
+				<pose>-0.009747405536472797 1.2834501266479492 0.13460296392440796 0.01669396087527275 -0.00048559013521298766 0.05815881863236427</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit42.dae</uri>
+						<scale>0.9999871253967285 1.0000096559524536 1.0000112056732178</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RMetaCarpus3">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit31_convex_hull">
+				<pose>-0.02823437564074993 0.9300938248634338 0.025217920541763306 0.014154311269521713 0.0003606207319535315 -0.05094410479068756</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit31.dae</uri>
+						<scale>0.9999797940254211 1.0000149011611938 1.0000100135803223</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit31">
+				<pose>-0.02823437564074993 0.9300938248634338 0.025217920541763306 0.014154311269521713 0.0003606207319535315 -0.05094410479068756</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit31.dae</uri>
+						<scale>0.9999797940254211 1.0000149011611938 1.0000100135803223</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RFPhalange3">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit32_convex_hull">
+				<pose>-0.013842970132827759 1.2758394479751587 0.12191222608089447 0.03034828044474125 0.0004467322723940015 -0.029435904696583748</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit32.dae</uri>
+						<scale>0.9999822378158569 1.0000135898590088 1.0000077486038208</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit32">
+				<pose>-0.013842970132827759 1.2758394479751587 0.12191222608089447 0.03034828044474125 0.0004467322723940015 -0.029435904696583748</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit32.dae</uri>
+						<scale>0.9999822378158569 1.0000135898590088 1.0000077486038208</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RMetaCarpus4">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit21_convex_hull">
+				<pose>0.019436664879322052 0.7418032288551331 0.011823447421193123 0.05697394534945488 0.0029238122515380383 -0.10251909494400024</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit21.dae</uri>
+						<scale>0.9999822974205017 1.0000182390213013 1.0000091791152954</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit21">
+				<pose>0.019436664879322052 0.7418032288551331 0.011823447421193123 0.05697394534945488 0.0029238122515380383 -0.10251909494400024</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit21.dae</uri>
+						<scale>0.9999822974205017 1.0000182390213013 1.0000091791152954</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RFPhalange4">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit22_convex_hull">
+				<pose>0.002634243341162801 1.0771191120147705 0.07804805040359497 0.03428687900304794 0.003376650856807828 -0.1963127702474594</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit22.dae</uri>
+						<scale>0.9999880790710449 1.0000158548355103 1.000008463859558</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit22">
+				<pose>0.002634243341162801 1.0771191120147705 0.07804805040359497 0.03428687900304794 0.003376650856807828 -0.1963127702474594</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit22.dae</uri>
+						<scale>0.9999880790710449 1.0000158548355103 1.000008463859558</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RMetaCarpus5">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit11_convex_hull">
+				<pose>-0.023983540013432503 0.3623051345348358 0.024175293743610382 0.12726722657680511 0.020038962364196777 -0.31194281578063965</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit11.dae</uri>
+						<scale>0.9999836087226868 1.000011920928955 1.0000050067901611</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<collision name="COL_Mouse001RLegDigit11_ncl1_1_convex_hull">
+				<pose>-6.04505729675293 -17.125289916992188 -2.156064987182617 0.12726722657680511 0.020038969814777374 -0.3119429051876068</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit11_ncl1_1.dae</uri>
+						<scale>1.0000020265579224 1.0000030994415283 1.0000029802322388</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit11">
+				<pose>-0.023983540013432503 0.3623051345348358 0.024175293743610382 0.12726722657680511 0.020038962364196777 -0.31194281578063965</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit11.dae</uri>
+						<scale>0.9999836087226868 1.000011920928955 1.0000050067901611</scale>
+					</mesh>
+				</geometry>
+			</visual>
+			<visual name="VIS_Mouse001RLegDigit11_ncl1_1">
+				<pose>-6.04505729675293 -17.125289916992188 -2.156064987182617 0.12726722657680511 0.020038969814777374 -0.3119429051876068</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit11_ncl1_1.dae</uri>
+						<scale>1.0000020265579224 1.0000030994415283 1.0000029802322388</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="RFPhalange5">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001RLegDigit12_convex_hull">
+				<pose>-0.0005399155197665095 0.504798173904419 0.039344076067209244 0.010202554054558277 0.001622983138076961 -0.3155145049095154</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001RLegDigit12.dae</uri>
+						<scale>0.9999901056289673 1.000013828277588 1.000004768371582</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001RLegDigit12">
+				<pose>-0.0005399155197665095 0.504798173904419 0.039344076067209244 0.010202554054558277 0.001622983138076961 -0.3155145049095154</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001RLegDigit12.dae</uri>
+						<scale>0.9999901056289673 1.000013828277588 1.000004768371582</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LCollarbone">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LCollarbone_convex_hull">
+				<pose>0.6155593395233154 2.54451584815979 0.04396355524659157 0.03310887888073921 0.02227429300546646 -1.1843609809875488</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LCollarbone.dae</uri>
+						<scale>1.000004768371582 0.9999964237213135 1.00001060962677</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LCollarbone">
+				<pose>0.6155593395233154 2.54451584815979 0.04396355524659157 0.03310887888073921 0.02227429300546646 -1.1843609809875488</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LCollarbone.dae</uri>
+						<scale>1.000004768371582 0.9999964237213135 1.00001060962677</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LHumerus">
+			<pose>-2.98023223877e-08 4.65265703201 -5.21540641785e-08 -2.059488534927368 1.029744267463684 -0.5061454772949219</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLeg1_ncl1_1_convex_hull">
+				<pose>-1.3503655195236206 1.0213218927383423 -1.4830667972564697 2.1316068172454834 1.0302027463912964 -0.606549859046936</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLeg1_ncl1_1.dae</uri>
+						<scale>1.0000079870224 0.9999957084655762 1.0000020265579224</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLeg1_ncl1_1">
+				<pose>-1.3503655195236206 1.0213218927383423 -1.4830667972564697 2.1316068172454834 1.0302027463912964 -0.606549859046936</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLeg1_ncl1_1.dae</uri>
+						<scale>1.0000079870224 0.9999957084655762 1.0000020265579224</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LRadius">
+			<pose>-6.26341486953 4.34503912714 -3.20196803366 -1.1537843350937258 0.04633934872372601 -1.1273846904141531</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLeg2_ncl1_1_convex_hull">
+				<pose>-0.01140090823173523 3.076864719390869 -0.1598326712846756 1.1962380409240723 0.02730560302734375 -0.04007111117243767</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLeg2_ncl1_1.dae</uri>
+						<scale>1.000001311302185 1.0000035762786865 1.000000238418579</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLeg2_ncl1_1">
+				<pose>-0.01140090823173523 3.076864719390869 -0.1598326712846756 1.1962380409240723 0.02730560302734375 -0.04007111117243767</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLeg2_ncl1_1.dae</uri>
+						<scale>1.000001311302185 1.0000035762786865 1.000000238418579</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LCarpus">
+			<pose>-3.3717559869 6.10839898721 -10.7978433137 -0.3692945547063586 0.019637980418868144 -1.196472484347689</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegAnkle_ncl1_1_convex_hull">
+				<pose>0.04735318943858147 0.5910359025001526 -0.08888784795999527 0.4031291604042053 -0.005542081315070391 0.027119578793644905</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegAnkle_ncl1_1.dae</uri>
+						<scale>0.9999938011169434 1.0000063180923462 0.9999999403953552</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegAnkle_ncl1_1">
+				<pose>0.04735318943858147 0.5910359025001526 -0.08888784795999527 0.4031291604042053 -0.005542081315070391 0.027119578793644905</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegAnkle_ncl1_1.dae</uri>
+						<scale>0.9999938011169434 1.0000063180923462 0.9999999403953552</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LMetaCarpus5">
+			<pose>-2.5241546047 5.86189539067 -11.08114803 -0.09979991937740552 0.023435425058218294 -1.478032361497991</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit11_ncl1_1_convex_hull">
+				<pose>0.024332528933882713 0.36289337277412415 0.024395503103733063 0.12725922465324402 -0.02003694698214531 0.3119291067123413</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit11_ncl1_1.dae</uri>
+						<scale>0.9999927282333374 1.0000033378601074 1.0000020265579224</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit11_ncl1_1">
+				<pose>0.024332528933882713 0.36289337277412415 0.024395503103733063 0.12725922465324402 -0.02003694698214531 0.3119291067123413</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit11_ncl1_1.dae</uri>
+						<scale>0.9999927282333374 1.0000033378601074 1.0000020265579224</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LFPhalange5">
+			<pose>-2.01472827162 5.91049433893 -11.132375403 0.0223172403670184 0.040801825887491275 -1.4797726694835813</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit12_ncl1_1_convex_hull">
+				<pose>4.781308234669268e-05 0.5047845840454102 0.039556197822093964 0.010199195705354214 -0.001622578245587647 0.3155084252357483</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit12_ncl1_1.dae</uri>
+						<scale>0.9999977350234985 1.0000065565109253 1.0000014305114746</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit12_ncl1_1">
+				<pose>4.781308234669268e-05 0.5047845840454102 0.039556197822093964 0.010199195705354214 -0.001622578245587647 0.3155084252357483</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit12_ncl1_1.dae</uri>
+						<scale>0.9999977350234985 1.0000065565109253 1.0000014305114746</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LMetaCarpus4">
+			<pose>-2.59920065139 6.00628509498 -11.0737858575 -0.020821253096022042 0.026961646937867165 -1.274190170228329</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit21_ncl1_1_convex_hull">
+				<pose>-0.02050747163593769 0.7437052130699158 0.011190049350261688 0.056964073330163956 -0.002923316787928343 0.10251498222351074</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit21_ncl1_1.dae</uri>
+						<scale>0.9999936819076538 1.0000067949295044 1.0000050067901611</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit21_ncl1_1">
+				<pose>-0.02050747163593769 0.7437052130699158 0.011190049350261688 0.056964073330163956 -0.002923316787928343 0.10251498222351074</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit21_ncl1_1.dae</uri>
+						<scale>0.9999936819076538 1.0000067949295044 1.0000050067901611</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LFPhalange4">
+			<pose>-1.44558019443 6.35956411416 -11.098901277 -0.005638565442433751 0.025044512645014803 -1.3614651056108842</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit22_ncl1_1_convex_hull">
+				<pose>-0.003088973695412278 1.0752604007720947 0.07741469144821167 0.03426617756485939 -0.0033748468849807978 0.19631832838058472</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit22_ncl1_1.dae</uri>
+						<scale>0.9999968409538269 1.0000051259994507 1.0000042915344238</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit22_ncl1_1">
+				<pose>-0.003088973695412278 1.0752604007720947 0.07741469144821167 0.03426617756485939 -0.0033748468849807978 0.19631832838058472</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit22_ncl1_1.dae</uri>
+						<scale>0.9999968409538269 1.0000051259994507 1.0000042915344238</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LMetaCarpus3">
+			<pose>-2.67669983044 6.38756563823 -11.0876910168 0.014274093962777993 0.029610322835645558 -1.2190572052450055</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit31_ncl1_1_convex_hull">
+				<pose>0.026008764281868935 0.9335342645645142 0.022725585848093033 0.014144770801067352 -0.0003604812955018133 0.050940047949552536</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit31_ncl1_1.dae</uri>
+						<scale>0.999994158744812 1.0000077486038208 1.000005841255188</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit31_ncl1_1">
+				<pose>0.026008764281868935 0.9335342645645142 0.022725585848093033 0.014144770801067352 -0.0003604812955018133 0.050940047949552536</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit31_ncl1_1.dae</uri>
+						<scale>0.999994158744812 1.0000077486038208 1.000005841255188</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LFPhalange3">
+			<pose>-1.09935672317 6.96569550499 -11.0637204451 -0.002664504351969811 0.029356703871134687 -1.2015981694627191</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit32_ncl1_1_convex_hull">
+				<pose>0.013718998059630394 1.273083209991455 0.1210663691163063 0.030338436365127563 -0.00044666495523415506 0.029432594776153564</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit32_ncl1_1.dae</uri>
+						<scale>0.9999974966049194 1.0000091791152954 1.0000042915344238</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit32_ncl1_1">
+				<pose>0.013718998059630394 1.273083209991455 0.1210663691163063 0.030338436365127563 -0.00044666495523415506 0.029432594776153564</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit32_ncl1_1.dae</uri>
+						<scale>0.9999974966049194 1.0000091791152954 1.0000042915344238</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LMetaCarpus2">
+			<pose>-2.80572910295 6.67308293997 -11.0695029441 -0.0004464472661842841 0.028487529782637123 -1.1250394812895756</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit41_ncl1_1_convex_hull">
+				<pose>0.026976535096764565 0.9584084153175354 0.032989129424095154 0.03870720788836479 0.0008759719785302877 -0.04525456205010414</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit41_ncl1_1.dae</uri>
+						<scale>0.9999927282333374 1.0000067949295044 1.0000070333480835</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit41_ncl1_1">
+				<pose>0.026976535096764565 0.9584084153175354 0.032989129424095154 0.03870720788836479 0.0008759719785302877 -0.04525456205010414</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit41_ncl1_1.dae</uri>
+						<scale>0.9999927282333374 1.0000067949295044 1.0000070333480835</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LFPhalange2">
+			<pose>-1.27801974274 7.40309577573 -11.0702579941 0.017504221699368702 0.02849098139894331 -1.1075791056586912</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit42_ncl1_1_convex_hull">
+				<pose>0.009877070784568787 1.2830350399017334 0.1340082585811615 0.01668490096926689 0.0004852304991800338 -0.058162443339824677</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit42_ncl1_1.dae</uri>
+						<scale>1.0000015497207642 1.0000056028366089 1.0000066757202148</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit42_ncl1_1">
+				<pose>0.009877070784568787 1.2830350399017334 0.1340082585811615 0.01668490096926689 0.0004852304991800338 -0.058162443339824677</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit42_ncl1_1.dae</uri>
+						<scale>1.0000015497207642 1.0000056028366089 1.0000066757202148</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LMetaCarpus1">
+			<pose>-2.88168483837 6.86888401334 -11.0995220258 0.01372316763111001 0.024693698593118468 -0.9372891972675366</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit51_ncl1_1_convex_hull">
+				<pose>-0.02758847549557686 0.67274409532547 0.015754153952002525 0.02902887761592865 0.003278393065556884 -0.2249133288860321</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit51_ncl1_1.dae</uri>
+						<scale>0.9999964237213135 1.000008225440979 1.0000032186508179</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit51_ncl1_1">
+				<pose>-0.02758847549557686 0.67274409532547 0.015754153952002525 0.02902887761592865 0.003278393065556884 -0.2249133288860321</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit51_ncl1_1.dae</uri>
+						<scale>0.9999964237213135 1.000008225440979 1.0000032186508179</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="LFPhalange1">
+			<pose>-1.97638500144 7.53335444186 -11.0841148833 0.011518457812783215 0.025795743029462217 -1.0245765330106535</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001LLegDigit52_ncl1_1_convex_hull">
+				<pose>-0.011245893314480782 0.9054125547409058 0.0847548395395279 0.03578069433569908 0.002531615551561117 -0.14126498997211456</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001LLegDigit52_ncl1_1.dae</uri>
+						<scale>1.0000003576278687 1.0000051259994507 1.0000035762786865</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001LLegDigit52_ncl1_1">
+				<pose>-0.011245893314480782 0.9054125547409058 0.0847548395395279 0.03578069433569908 0.002531615551561117 -0.14126498997211456</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001LLegDigit52_ncl1_1.dae</uri>
+						<scale>1.0000003576278687 1.0000051259994507 1.0000035762786865</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<link name="Sternum">
+			<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+			<inertial>
+				<mass>1.0</mass>
+				<pose>0 0 0 0 0 0</pose>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+			<collision name="COL_Mouse001Sternum_convex_hull">
+				<pose>-1.5553985576843843e-05 3.199065685272217 0.12006306648254395 2.5134425163269043 4.48765331384493e-06 -1.457708435737004e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/collisions/VIS_Mouse001Sternum.dae</uri>
+						<scale>1.0000089406967163 0.9999971985816956 1.000006914138794</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="VIS_Mouse001Sternum">
+				<pose>-1.5553985576843843e-05 3.199065685272217 0.12006306648254395 2.5134425163269043 4.48765331384493e-06 -1.457708435737004e-06</pose>
+				<geometry>
+					<mesh>
+						<uri>model://cheesy_reborn_model/meshes/visual/VIS_Mouse001Sternum.dae</uri>
+						<scale>1.0000089406967163 0.9999971985816956 1.000006914138794</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<joint name="Spine1" type="revolute">
+			<parent>Pelvis</parent>
+			<child>Spine1</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.001523085754254235</lower>
+					<upper>0.0015230883549974868</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Spine2" type="revolute">
+			<parent>Spine1</parent>
+			<child>Spine2</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.001523069109497422</lower>
+					<upper>0.0015231049997543001</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Spine3" type="revolute">
+			<parent>Spine2</parent>
+			<child>Spine3</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015231606556598933</lower>
+					<upper>0.0015230134535918285</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Spine4" type="revolute">
+			<parent>Spine3</parent>
+			<child>Spine4</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.001523052464740609</lower>
+					<upper>0.0015231216445111132</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Spine5" type="revolute">
+			<parent>Spine4</parent>
+			<child>Spine5</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.001523046222956804</lower>
+					<upper>0.0015231278862949177</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Spine6" type="revolute">
+			<parent>Spine5</parent>
+			<child>Spine6</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015230503841460075</lower>
+					<upper>0.0015231237251057148</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Spine7" type="revolute">
+			<parent>Spine6</parent>
+			<child>Spine7</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015229838051187552</lower>
+					<upper>0.0015231903041329664</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Spine8" type="revolute">
+			<parent>Spine7</parent>
+			<child>Spine8</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015229609185781375</lower>
+					<upper>0.0015232131906735844</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Spine9" type="revolute">
+			<parent>Spine8</parent>
+			<child>Spine9</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015229484350105277</lower>
+					<upper>0.0015232256742411944</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Spine10" type="revolute">
+			<parent>Spine9</parent>
+			<child>Spine10</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015229650797673408</lower>
+					<upper>0.0015232090294843813</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Spine11" type="revolute">
+			<parent>Spine10</parent>
+			<child>Spine11</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015229734021457472</lower>
+					<upper>0.0015232007071059748</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Spine12" type="revolute">
+			<parent>Spine11</parent>
+			<child>Spine12</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015229380320375197</lower>
+					<upper>0.0015232360772142023</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Spine13" type="revolute">
+			<parent>Spine12</parent>
+			<child>Spine13</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015229442738213244</lower>
+					<upper>0.0015232298354303975</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Spine14" type="revolute">
+			<parent>Spine13</parent>
+			<child>Spine14</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015229754827403488</lower>
+					<upper>0.001523198626511373</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Spine15" type="revolute">
+			<parent>Spine14</parent>
+			<child>Spine15</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015229775633349507</lower>
+					<upper>0.0015231965459167715</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Spine16" type="revolute">
+			<parent>Spine15</parent>
+			<child>Spine16</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015229900469025603</lower>
+					<upper>0.0015231840623491616</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Spine17" type="revolute">
+			<parent>Spine16</parent>
+			<child>Spine17</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015229567573889343</lower>
+					<upper>0.001523217351862788</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="ribcage" type="revolute">
+			<parent>Spine17</parent>
+			<child>ribcage</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Neck1" type="revolute">
+			<parent>ribcage</parent>
+			<child>Neck1</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015225343966848044</lower>
+					<upper>0.0015236397125669176</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Neck2" type="revolute">
+			<parent>Neck1</parent>
+			<child>Neck2</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015053486852753869</lower>
+					<upper>0.0015408254239763352</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Neck3" type="revolute">
+			<parent>Neck2</parent>
+			<child>Neck3</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015236371118236653</lower>
+					<upper>0.0015225369974280565</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Neck4" type="revolute">
+			<parent>Neck3</parent>
+			<child>Neck4</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015232771689575844</lower>
+					<upper>0.0015228969402941374</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Neck5" type="revolute">
+			<parent>Neck4</parent>
+			<child>Neck5</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015224698982521541</lower>
+					<upper>0.001523704210999568</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Neck6" type="revolute">
+			<parent>Neck5</parent>
+			<child>Neck6</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.001522532316090203</lower>
+					<upper>0.0015236417931615192</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Neck7" type="revolute">
+			<parent>Neck6</parent>
+			<child>Neck7</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.001522532316090203</lower>
+					<upper>0.0015236417931615192</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Neck8" type="revolute">
+			<parent>Neck7</parent>
+			<child>Neck8</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015229109843076984</lower>
+					<upper>0.0015232631249440234</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Head" type="revolute">
+			<parent>Neck8</parent>
+			<child>Head</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RFemur" type="revolute">
+			<parent>Pelvis_001</parent>
+			<child>RFemur</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.02850415644522735</lower>
+					<upper>-0.004134762530916277</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RTibia" type="revolute">
+			<parent>RFemur</parent>
+			<child>RTibia</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>0.006945976652252507</lower>
+					<upper>0.03893080453932126</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RTarsus" type="revolute">
+			<parent>RTibia</parent>
+			<child>RTarsus</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.030469367512029475</lower>
+					<upper>-7.626142167368394e-06</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RMetatarsus1" type="revolute">
+			<parent>RTarsus</parent>
+			<child>RMetatarsus1</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.001552565699164651</lower>
+					<upper>0.0014936084100870709</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RBPhalange1" type="revolute">
+			<parent>RMetatarsus1</parent>
+			<child>RBPhalange1</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0016045181463672127</lower>
+					<upper>0.0014416559628845096</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RMetatarsus2" type="revolute">
+			<parent>RTarsus</parent>
+			<child>RMetatarsus2</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.001521662627546724</lower>
+					<upper>0.001524511481704998</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RBPhalange2" type="revolute">
+			<parent>RMetatarsus2</parent>
+			<child>RBPhalange2</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0013347482503205923</lower>
+					<upper>0.0017114258589311297</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RMetatarsus3" type="revolute">
+			<parent>RTarsus</parent>
+			<child>RMetatarsus3</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015076352587425723</lower>
+					<upper>0.00153853885050915</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RBPhalange3" type="revolute">
+			<parent>RMetatarsus3</parent>
+			<child>RBPhalange3</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0014544302935898328</lower>
+					<upper>0.001591743815661889</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RMetatarsus4" type="revolute">
+			<parent>RTarsus</parent>
+			<child>RMetatarsus4</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015180070228316698</lower>
+					<upper>0.0015281670864200523</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RBPhalange4" type="revolute">
+			<parent>RMetatarsus4</parent>
+			<child>RBPhalange4</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0013312008365248228</lower>
+					<upper>0.0017149732727268993</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RMetatarsus5" type="revolute">
+			<parent>RTarsus</parent>
+			<child>RMetatarsus5</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-1.5707963267948966</lower>
+					<upper>1.5707963267948966</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RBPhalange5" type="revolute">
+			<parent>RMetatarsus5</parent>
+			<child>RBPhalange5</child>
+			<axis>
+				<xyz>1.0 0.0 0.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0016057977120472115</lower>
+					<upper>0.0014403763972045103</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LFemur" type="revolute">
+			<parent>Pelvis_002</parent>
+			<child>LFemur</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.028502061286463518</lower>
+					<upper>-0.004132667892301092</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LTibia" type="revolute">
+			<parent>LFemur</parent>
+			<child>LTibia</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.1027248893380007</lower>
+					<upper>-0.07074005833004003</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LTarsus" type="revolute">
+			<parent>LTibia</parent>
+			<child>LTarsus</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.030470316263167815</lower>
+					<upper>-8.573367400879221e-06</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LMetatarsus1" type="revolute">
+			<parent>LTarsus</parent>
+			<child>LMetatarsus1</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015524226582857893</lower>
+					<upper>0.0014937514509659325</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LBPhalange1" type="revolute">
+			<parent>LMetatarsus1</parent>
+			<child>LBPhalange1</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0016043542995423346</lower>
+					<upper>0.0014418198097093872</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LMetatarsus2" type="revolute">
+			<parent>LTarsus</parent>
+			<child>LMetatarsus2</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015215424732084799</lower>
+					<upper>0.001524631636043242</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LBPhalange2" type="revolute">
+			<parent>LMetatarsus2</parent>
+			<child>LBPhalange2</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.001334653063117568</lower>
+					<upper>0.001711521046134154</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LMetatarsus3" type="revolute">
+			<parent>LTarsus</parent>
+			<child>LMetatarsus3</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015076191341344097</lower>
+					<upper>0.0015385549751173126</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LBPhalange3" type="revolute">
+			<parent>LMetatarsus3</parent>
+			<child>LBPhalange3</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0014542914139001745</lower>
+					<upper>0.0015918826953515476</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LMetatarsus4" type="revolute">
+			<parent>LTarsus</parent>
+			<child>LMetatarsus4</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015179596893044828</lower>
+					<upper>0.001528214419947239</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LBPhalange4" type="revolute">
+			<parent>LMetatarsus4</parent>
+			<child>LBPhalange4</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.001331091085159587</lower>
+					<upper>0.001715083024092135</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LMetatarsus5" type="revolute">
+			<parent>LTarsus</parent>
+			<child>LMetatarsus5</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015410147580850828</lower>
+					<upper>0.001505159351166639</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LBPhalange5" type="revolute">
+			<parent>LMetatarsus5</parent>
+			<child>LBPhalange5</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0016057295725740084</lower>
+					<upper>0.0014404445366777137</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail1" type="revolute">
+			<parent>Pelvis_003</parent>
+			<child>Tail1</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015229510357537797</lower>
+					<upper>0.001523223073497942</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail2" type="revolute">
+			<parent>Tail1</parent>
+			<child>Tail2</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015229676805105926</lower>
+					<upper>0.001523206428741129</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail3" type="revolute">
+			<parent>Tail2</parent>
+			<child>Tail3</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015230425819162514</lower>
+					<upper>0.0015231315273354707</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail4" type="revolute">
+			<parent>Tail3</parent>
+			<child>Tail4</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.001626194301075586</lower>
+					<upper>0.001419979808176136</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail5" type="revolute">
+			<parent>Tail4</parent>
+			<child>Tail5</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0016221080132779956</lower>
+					<upper>0.0014240660959737262</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail6" type="revolute">
+			<parent>Tail5</parent>
+			<child>Tail6</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0016151338601733504</lower>
+					<upper>0.0014310402490783714</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail7" type="revolute">
+			<parent>Tail6</parent>
+			<child>Tail7</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0016075188839314053</lower>
+					<upper>0.0014386552253203165</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail8" type="revolute">
+			<parent>Tail7</parent>
+			<child>Tail8</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0016070299442000236</lower>
+					<upper>0.0014391441650516985</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail9" type="revolute">
+			<parent>Tail8</parent>
+			<child>Tail9</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0016033743394849695</lower>
+					<upper>0.0014427997697667523</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail10" type="revolute">
+			<parent>Tail9</parent>
+			<child>Tail10</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0016046580663541716</lower>
+					<upper>0.0014415160428975502</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail11" type="revolute">
+			<parent>Tail10</parent>
+			<child>Tail11</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.001604645582786562</lower>
+					<upper>0.00144152852646516</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail12" type="revolute">
+			<parent>Tail11</parent>
+			<child>Tail12</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0016046539051649685</lower>
+					<upper>0.0014415202040867535</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail13" type="revolute">
+			<parent>Tail12</parent>
+			<child>Tail13</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015895987226276142</lower>
+					<upper>0.0014565753866241074</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail14" type="revolute">
+			<parent>Tail13</parent>
+			<child>Tail14</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0016046476633811636</lower>
+					<upper>0.0014415264458705584</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail15" type="revolute">
+			<parent>Tail14</parent>
+			<child>Tail15</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0016046206156513426</lower>
+					<upper>0.0014415534936003795</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail16" type="revolute">
+			<parent>Tail15</parent>
+			<child>Tail16</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0016044437651102045</lower>
+					<upper>0.0014417303441415174</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail17" type="revolute">
+			<parent>Tail16</parent>
+			<child>Tail17</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0016043792666775541</lower>
+					<upper>0.0014417948425741677</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail18" type="revolute">
+			<parent>Tail17</parent>
+			<child>Tail18</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.001604518666515863</lower>
+					<upper>0.001441655442735859</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail19" type="revolute">
+			<parent>Tail18</parent>
+			<child>Tail19</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0016047974661924807</lower>
+					<upper>0.0014413766430592413</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail20" type="revolute">
+			<parent>Tail19</parent>
+			<child>Tail20</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0016052843253292607</lower>
+					<upper>0.0014408897839224613</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail21" type="revolute">
+			<parent>Tail20</parent>
+			<child>Tail21</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0016070341053892267</lower>
+					<upper>0.0014391400038624952</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail22" type="revolute">
+			<parent>Tail21</parent>
+			<child>Tail22</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.001610999718699923</lower>
+					<upper>0.001435174390551799</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="Tail23" type="revolute">
+			<parent>Tail22</parent>
+			<child>Tail23</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0010748742473665294</lower>
+					<upper>0.001971299926903774</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RCollarbone" type="revolute">
+			<parent>ribcage_001</parent>
+			<child>RCollarbone</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RHumerus" type="revolute">
+			<parent>RCollarbone</parent>
+			<child>RHumerus</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>0.02929242716075559</lower>
+					<upper>-0.009698602269904294</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RRadius" type="revolute">
+			<parent>RHumerus</parent>
+			<child>RRadius</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.008557952169820592</lower>
+					<upper>0.01977146813853259</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RCarpus" type="revolute">
+			<parent>RRadius</parent>
+			<child>RCarpus</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.015231542058166283</lower>
+					<upper>0.015230200074648237</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RMetaCarpus1" type="revolute">
+			<parent>RCarpus</parent>
+			<child>RMetaCarpus1</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0029346589199425077</lower>
+					<upper>0.00011151525432779574</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RFPhalange1" type="revolute">
+			<parent>RMetaCarpus1</parent>
+			<child>RFPhalange1</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.004995059270363545</lower>
+					<upper>-0.0019488851611118238</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RMetaCarpus2" type="revolute">
+			<parent>RCarpus</parent>
+			<child>RMetaCarpus2</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.00153087966163192</lower>
+					<upper>0.001515294447619802</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RFPhalange2" type="revolute">
+			<parent>RMetaCarpus2</parent>
+			<child>RFPhalange2</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0023204569905699753</lower>
+					<upper>0.0007257171837003282</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RMetaCarpus3" type="revolute">
+			<parent>RCarpus</parent>
+			<child>RMetaCarpus3</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0014723296489476078</lower>
+					<upper>0.0015738444603041145</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RFPhalange3" type="revolute">
+			<parent>RMetaCarpus3</parent>
+			<child>RFPhalange3</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.001218526235873853</lower>
+					<upper>0.001827647873377869</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RMetaCarpus4" type="revolute">
+			<parent>RCarpus</parent>
+			<child>RMetaCarpus4</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015802854610420932</lower>
+					<upper>0.001465888648209629</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RFPhalange4" type="revolute">
+			<parent>RMetaCarpus4</parent>
+			<child>RFPhalange4</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>0.05186632306962175</lower>
+					<upper>0.05491249665872482</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RMetaCarpus5" type="revolute">
+			<parent>RCarpus</parent>
+			<child>RMetaCarpus5</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015411182676665137</lower>
+					<upper>0.0015050558415852081</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="RFPhalange5" type="revolute">
+			<parent>RMetaCarpus5</parent>
+			<child>RFPhalange5</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.003930637475145509</lower>
+					<upper>-0.0008844633008752051</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LCollarbone" type="revolute">
+			<parent>ribcage_001</parent>
+			<child>LCollarbone</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>0.0</lower>
+					<upper>0.0</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LHumerus" type="revolute">
+			<parent>LCollarbone</parent>
+			<child>LHumerus</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>0.02929274965291884</lower>
+					<upper>-0.009698279777741042</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LRadius" type="revolute">
+			<parent>LHumerus</parent>
+			<child>LRadius</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.00855795164967194</lower>
+					<upper>0.01977146813853259</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LCarpus" type="revolute">
+			<parent>LRadius</parent>
+			<child>LCarpus</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.015231290306219487</lower>
+					<upper>0.015230451826595033</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LMetaCarpus5" type="revolute">
+			<parent>LCarpus</parent>
+			<child>LMetaCarpus5</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.001572477509650847</lower>
+					<upper>0.0014736965996008748</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LFPhalange5" type="revolute">
+			<parent>LMetaCarpus5</parent>
+			<child>LFPhalange5</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.003930315503130907</lower>
+					<upper>-0.0008841413938791852</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LMetaCarpus4" type="revolute">
+			<parent>LCarpus</parent>
+			<child>LMetaCarpus4</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015800571157845648</lower>
+					<upper>0.001466116993467157</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LFPhalange4" type="revolute">
+			<parent>LMetaCarpus4</parent>
+			<child>LFPhalange4</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.05779660025073975</lower>
+					<upper>-0.05475042666163668</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LMetaCarpus3" type="revolute">
+			<parent>LCarpus</parent>
+			<child>LMetaCarpus3</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0014720971425008762</lower>
+					<upper>0.0015740769667508458</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LFPhalange3" type="revolute">
+			<parent>LMetaCarpus3</parent>
+			<child>LFPhalange3</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.001218418565103219</lower>
+					<upper>0.001827755544148503</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LMetaCarpus2" type="revolute">
+			<parent>LCarpus</parent>
+			<child>LMetaCarpus2</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.0015307241371854486</lower>
+					<upper>0.0015154499720662733</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LFPhalange2" type="revolute">
+			<parent>LMetaCarpus2</parent>
+			<child>LFPhalange2</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.002320311869096512</lower>
+					<upper>0.0007258622401552101</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LMetaCarpus1" type="revolute">
+			<parent>LCarpus</parent>
+			<child>LMetaCarpus1</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.002934436816468784</lower>
+					<upper>0.00011173731716490585</upper>
+				</limit>
+			</axis>
+		</joint>
+		<joint name="LFPhalange1" type="revolute">
+			<parent>LMetaCarpus1</parent>
+			<child>LFPhalange1</child>
+			<axis>
+				<xyz>0.0 0.0 1.0</xyz>
+				<use_parent_model_frame>true</use_parent_model_frame>
+				<limit>
+					<lower>-0.004994943277214506</lower>
+					<upper>-0.0019487691679627834</upper>
+				</limit>
+			</axis>
+		</joint>
 
-<sdf version="1.6">
-  <model name='mouse_and_sled'>
-    <link name="humerus">
-      <pose>0.011430741548538208 -0.07998862266540527 0.03054861545562744 1.501339316368103 0.3068421483039856 1.2602612972259521</pose>
-<inertial>
-  <pose>4.13950e-03 -1.77810e-04 -1.08265e-04 0 0 0</pose>
-  <mass>5.21922e-05</mass>
-  <inertia>
-    <ixx>3.08473e-11</ixx>
-    <iyy>7.57217e-10</iyy>
-    <izz>7.65936e-10</izz>
-    <ixy>-2.65578e-11</ixy>
-    <ixz>1.69743e-11</ixz>
-    <iyz>2.61988e-12</iyz>
-  </inertia>
-</inertial>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <scale>0.00161 0.00161  0.00161</scale>
-            <uri>model://cdp1_mouse_w_sled/meshes/UpperLeg.dae</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/Grey</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-      </visual>
-    </link>
-
-    <link name="radius">
-      <pose>0.014731976985931396 -0.0697014856338501 0.027125487327575684 -0.1073882207274437 1.1397238969802856 -1.667025089263916</pose>
-<inertial>
-  <pose>3.60719e-03 -3.44408e-06 -5.31513e-04 0 0 0</pose>
-  <mass>2.71493e-05</mass>
-  <inertia>
-    <ixx>2.21656e-11</ixx>
-    <iyy>5.68533e-10</iyy>
-    <izz>5.53422e-10</izz>
-    <ixy>-1.29702e-11</ixy>
-    <ixz>-8.09620e-11</ixz>
-    <iyz>-1.75862e-12</iyz>
-  </inertia>
-</inertial>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <scale>0.00161 0.00161  0.00161</scale>
-            <uri>model://cdp1_mouse_w_sled/meshes/LowerLeg.dae</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/Grey</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-      </visual>
-    </link>
-
-    <link name="foot">
-      <pose>0.01419455647468567 -0.07526905536651611 0.01496369481086731 1.4968167543411255 0.05008336156606674 -1.6218668222427368</pose>
-<inertial>
-  <pose>3.13744e-03 -4.07710e-04 2.34798e-05 0 0 0</pose>
-  <mass>9.10633e-06</mass>
-  <inertia>
-    <ixx>3.16374e-12</ixx>
-    <iyy>3.98443e-11</iyy>
-    <izz>3.72875e-11</izz>
-    <ixy>-1.54496e-12</ixy>
-    <ixz>-1.75061e-13</ixz>
-    <iyz>-1.33752e-14</iyz>
-  </inertia>
-</inertial>
-
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <scale>0.00161 0.00161  0.00161</scale>
-            <uri>model://cdp1_mouse_w_sled/meshes/Foot_simplified.dae</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/Grey</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-      </visual>
-    </link>
-
-    <joint name="world_humerus" type="ball">
-      <pose>0.0 -0.0476837158203125e-07 0.0 -1.3425979614257812 -1.2740046977996826 0.08899474143981934</pose>
-      <parent>world</parent>
-      <child>humerus</child>
-<!--      <axis>
-        <xyz>1 0 0</xyz>
-        <dynamics>
-          <damping>1.e-7</damping>
-        </dynamics>
-        <limit>
-            <lower>-2.44</lower>
-            <upper>0.</upper>
-            <stiffness>1</stiffness>
-            <dissipation>1.e-3</dissipation>
-        </limit>
-      </axis>-->
-    </joint>
-
-    <joint name="humerus_radius" type="revolute">
-      <pose> 0.02384185791015625e-07 -0.095367431640625e-07 0.0 -1.14228093624115 -0.01989903301000595 1.6109617948532104</pose>
-      <parent>humerus</parent>
-      <child>radius</child>
-      <axis>
-        <xyz>1 0 0</xyz>
-        <dynamics>
-          <damping>1.e-6</damping>
-        </dynamics>
-        <limit>
-            <lower>-1.046</lower>
-            <upper>1.046</upper>
-            <stiffness>100</stiffness>
-            <dissipation>1.e-2</dissipation>
-        </limit>
-      </axis>
-    </joint>
-
-    <joint name="radius_foot" type="revolute">
-      <pose>0.03814697265625e-06 0.0 0.0667572021484375e-06 0.5690118074417114 1.4830573797225952 2.1917858123779297</pose>
-      <parent>radius</parent>
-      <child>foot</child>
-      <axis>
-        <xyz>1 0 0</xyz>
-        <dynamics>
-          <damping>1.e-6</damping>
-        </dynamics>
-        <limit>
-            <lower>-0.8722</lower>
-            <upper>0.6</upper>
-            <stiffness>100</stiffness>
-            <dissipation>1.e-2</dissipation>
-        </limit>
-      </axis>
-    </joint>
-
-    <include>
-      <uri>model://cdp1_msled</uri>
-    </include>
-
-    <joint name="slider_foot" type="prismatic">
-      <parent>foot</parent>
-      <child>cdp1_msled::sled</child>
-      <pose>0 0 1.e-3 0 0 0</pose>
-      <axis>
-      <xyz>1 0 0</xyz>
-<!--        <limit>
-          <lower>-0.01</lower>
-          <upper>0.01</upper>
-          <stiffness>100.</stiffness>
-          <dissipation>0.01</dissipation>
-        </limit>-->
-      </axis>
-    </joint>
-
-    <muscles>model://cdp1_mouse_w_sled/muscles.osim</muscles>
-
-    <plugin name="muscle_interface_plugin" filename="libgazebo_ros_muscle_interface.so"></plugin>
-  </model>
+		<muscles>model://cheesy_reborn/muscles.osim</muscles>
+		
+    	<plugin filename="libgazebo_ros_muscle_interface.so" name="muscle_interface_plugin" />
+	</model>
 </sdf>
