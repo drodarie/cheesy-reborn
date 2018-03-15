@@ -9,8 +9,8 @@
     <configuration type="3d-settings" src="CheesyReborn.3ds"/>
     <configuration type="brainvisualizer" src="CheesyRebornNeuronCoords.json"/>
     <maturity>development</maturity>
-    <environmentModel src="cheesy_reborn_model/world/cdp1_world.sdf">
-        <robotPose x="0.0" y="0.0" z="0.0" ux="0.0" uy="0.0" uz="0.0" theta="0.0"/>
+    <environmentModel src="cheesy_reborn_model/world/world.sdf">
+        <robotPose x="0.0" y="0.0" z="8.0" ux="0.0" uy="0.0" uz="0.0" theta="0.0"/>
     </environmentModel>
     <bibiConf src="CheesyReborn.bibi"/>
     <experimentControl>
