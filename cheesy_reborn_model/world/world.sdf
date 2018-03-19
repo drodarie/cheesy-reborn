@@ -14,28 +14,49 @@
             </attenuation>
             <direction>0.3698 0.4 -0.5</direction>
         </light>
-
-        <model name="ground">
-            <static>true</static>
-            <link name="Ground">
-                <visual name="Base">
-                    <geometry>
-                        <mesh>
-                            <scale>1 1 1</scale>
-                            <uri>model://large_concrete_ground/meshes/largeconcreteground.dae</uri>
-                        </mesh>
-                    </geometry>
-                </visual>
-                <collision name="groundcollision">
-                  <geometry>
-                    <plane>
-                      <size>1000 1000</size>
-                    </plane>
-                  </geometry>
-                </collision>
-            </link>
-        </model>
-
+		<model name="box_0">
+		  <static>true</static>
+		  <pose frame="">-0 0 0 0 0 0</pose>
+		  <link name="link">
+		    <collision name="collision">
+		      <geometry>
+		        <box>
+		          <size>0.1 0.1 0.01</size>
+		        </box>
+		      </geometry>
+		      <max_contacts>10</max_contacts>
+		      <surface>
+		        <contact>
+		          <ode/>
+		        </contact>
+		        <bounce/>
+		        <friction>
+		          <torsional>
+		            <ode/>
+		          </torsional>
+		          <ode/>
+		        </friction>
+		      </surface>
+		      <laser_retro>1.27079e+31</laser_retro>
+		    </collision>
+		    <visual name="visual">
+		      <geometry>
+		        <box>
+		          <size>0.1 0.1 0.01</size>
+		        </box>
+		      </geometry>
+		      <material>
+		        <script>
+		          <uri>file://media/materials/scripts/gazebo.material</uri>
+		          <name>Gazebo/Grey</name>
+		        </script>
+		      </material>
+		    </visual>
+		    <self_collide>0</self_collide>
+		    <kinematic>0</kinematic>
+		    <gravity>1</gravity>
+		  </link>
+		</model>
         <scene>
             <ambient>0.4 0.4 0.4 1</ambient>
             <background>0.7 0.7 0.7 1</background>

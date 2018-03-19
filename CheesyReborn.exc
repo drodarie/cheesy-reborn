@@ -10,7 +10,7 @@
     <configuration type="brainvisualizer" src="CheesyRebornNeuronCoords.json"/>
     <maturity>development</maturity>
     <environmentModel src="cheesy_reborn_model/world/world.sdf">
-        <robotPose x="0.0" y="0.0" z="8.0" ux="0.0" uy="0.0" uz="0.0" theta="0.0"/>
+        <robotPose x="0.0" y="0.0" z="0.02" ux="0.0" uy="0.0" uz="0.0" theta="0.0"/>
     </environmentModel>
     <bibiConf src="CheesyReborn.bibi"/>
     <experimentControl>
@@ -19,8 +19,13 @@
                       src="CheesyRebornControl.exd"/>
     </experimentControl>
     <cameraPose>
-        <cameraPosition x="0.20881767737668355" y="-0.26" z="0.07452707557551946"/>
-        <cameraLookAt x="-0.527092211" y="0.839239426" z="-0.133607597"/>
-    </cameraPose>
-    <physicsEngine>opensim</physicsEngine>
+		<cameraPosition x="0.208817677377" y="-0.26" z="0.0745270755755"/>
+		<cameraLookAt x="-0.527092211" y="0.839239426" z="-0.133607597"/>
+	</cameraPose>
+    <physicsEngine>ode</physicsEngine>
+	<gzbridgesettings>
+        <pose_update_delta_translation>1.e-12</pose_update_delta_translation>
+        <pose_update_delta_rotation>1.e-12</pose_update_delta_rotation>
+        <pose_update_early_threshold>0.02</pose_update_early_threshold>
+    </gzbridgesettings>
 </ExD>
